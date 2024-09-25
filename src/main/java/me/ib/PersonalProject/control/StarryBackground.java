@@ -1,4 +1,4 @@
-package me.ib.control;
+package me.ib.PersonalProject.control;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;

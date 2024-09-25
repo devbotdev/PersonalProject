@@ -1,11 +1,9 @@
-package me.ib.control;
+package me.ib.PersonalProject.control;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
-import me.ib.util.State;
-import me.ib.util.Utility;
 
 public final class Controller {
 
