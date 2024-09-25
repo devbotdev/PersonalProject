@@ -20,8 +20,6 @@ public class Controller {
 
     @FXML
     public void initialize() {
-        mainPane.getStyleClass().add("star-field-pane");
-
         exitButton.setOnAction(event -> System.exit(0));
     }
 }
