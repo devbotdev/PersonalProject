@@ -1,5 +1,5 @@
 #label-title {
-    -fx-font-size: 100; /* adjust font size as needed */
+    -fx-font-size: 150; /* adjust font size as needed */
     -fx-text-alignment: center;
     -fx-font-family: "Montserrat";
     -fx-font-weight: bold;
@@ -8,8 +8,8 @@
 .button {
     -fx-background-color: #333;
     -fx-text-fill: #fff;
-    -fx-font-size: 14;
-    -fx-font-family: "Montserrat";
+    -fx-font-size: 30;
+    -fx-font-family: "Kinetika Ultra";
     -fx-cursor: hand;
     -fx-padding: 10;
     -fx-border-radius: 5;
