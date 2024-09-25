@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane stylesheets="@space.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.control.Controller">
+   <children>
+      <Pane id="stars" prefHeight="200.0" prefWidth="200.0" stylesheets="@space.css" />
+      <Pane id="stars2" prefHeight="200.0" prefWidth="200.0" stylesheets="@space.css" />
+      <Pane id="stars3" prefHeight="200.0" prefWidth="200.0" stylesheets="@space.css" />
+      <BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0">
+         <center>
+            <VBox fx:id="vBox" alignment="CENTER" prefHeight="540.0" prefWidth="960.0" spacing="10.0" stylesheets="@stylesheet.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="label-title" fx:id="titleLabel" stylesheets="@stylesheet.css" text="Simulator" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Bold" size="120.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="launchButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Launch" />
+                  <Button fx:id="optionsButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Options" />
+                  <Button fx:id="exitButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Exit" />
+               </children>
+            </VBox>
+         </center>
+         <!-- Add the star field pane -->
+         <Pane fx:id="starFieldPane" styleClass="star-field" />
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,31 @@
+#label-title {
+    -fx-font-size: 100; /* adjust font size as needed */
+    -fx-text-alignment: center;
+    -fx-font-family: "Montserrat";
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-background-color: #333;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14;
+    -fx-font-family: "Montserrat";
+    -fx-cursor: hand;
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    -fx-border-color: #666;
+}
+
+.button:hover {
+    -fx-background-color: #444;
+}
+
+.button:pressed {
+    -fx-background-color: #555;
+}
+
+.button:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+}
