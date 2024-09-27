@@ -29,3 +29,7 @@
     -fx-opacity: 0.5;
     -fx-cursor: default;
 }
+
+.stage-title {
+    -fx-alignment: CENTER;
+}

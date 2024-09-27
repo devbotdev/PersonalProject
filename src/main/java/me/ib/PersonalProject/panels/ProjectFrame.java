@@ -15,11 +15,11 @@ public final class ProjectFrame extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/scene.fxml")));
+        Utility.state = State.MAIN_MENU;
+
+        Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/titlescreen.fxml")));
 
         Scene scene = new Scene(root);
-
-        Utility.state = State.MAIN_MENU;
 
         primaryStage.setTitle("Personal Project");
 
