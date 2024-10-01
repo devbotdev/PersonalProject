@@ -1,8 +1,16 @@
 #label-title {
-    -fx-font-size: 150; /* adjust font size as needed */
+    -fx-font-size: 150;
     -fx-text-alignment: center;
     -fx-font-family: "Montserrat";
     -fx-font-weight: bold;
+}
+
+#options-titles {
+    -fx-font-size: 20;
+    -fx-text-alignment: center;
+    -fx-font-family: "Montserrat";
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
 }
 
 .button {
@@ -32,4 +40,40 @@
 
 .stage-title {
     -fx-alignment: CENTER;
+}
+
+/* CSS For Sliders */
+
+.slider {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+.slider .track {
+    -fx-background-color: #444;
+    -fx-background-radius: 10;
+    -fx-padding: 2;
+}
+
+.slider .thumb {
+    -fx-background-color: #66d9ef; /* a bright blue color */
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-shape: "M 0 0 L 10 5 L 0 10 Z"; /* a triangle shape */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 5);
+}
+
+.slider .track .filled-track {
+    -fx-background-color: #66d9ef; /* same bright blue color as the thumb */
+    -fx-background-radius: 10;
+}
+
+.slider .track .empty-track {
+    -fx-background-color: #333;
+    -fx-background-radius: 10;
+}
+
+.slider:pressed {
+    -fx-border-color: #333;
 }
