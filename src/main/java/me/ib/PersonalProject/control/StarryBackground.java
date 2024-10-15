@@ -23,6 +23,28 @@ public class StarryBackground {
     private Circle[] smallStars, mediumStars, bigStars;
 
     private final Pane bgPane;
+
+    public StarryBackground(Pane bgPane, int small, int med, int big, int speed) {
+        this.bgPane = bgPane;
+
+        RadialGradient gradient = new RadialGradient(
+                0, 0, (double) WIDTH / 2, HEIGHT, HEIGHT,
+                false, null,
+                new Stop(0, javafx.scene.paint.Color.web("#1B2735")),
+                new Stop(1, Color.web("#090A0F"))
+        );
+        bgPane.setBackground(new javafx.scene.layout.Background(
+                new javafx.scene.layout.BackgroundFill(gradient, null, null)));
+
+        createStars();
+
+        Timeline timeline = new Timeline(
+                new KeyFrame(Duration.ZERO, event -> animateStars()),
+                new KeyFrame(Duration.millis(speed))
+        );
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
+    }
     public StarryBackground(Pane bgPane) {
         this.bgPane = bgPane;
 

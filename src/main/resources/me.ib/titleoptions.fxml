@@ -16,11 +16,11 @@
             <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
                   <Pane prefHeight="200.0" prefWidth="200.0" />
-                  <VBox prefHeight="540.0" prefWidth="201.0">
+                  <VBox prefHeight="540.0" prefWidth="191.0">
                      <children>
                         <Pane prefHeight="200.0" prefWidth="200.0" />
-                        <Label id="options-titles" stylesheets="@stylesheet.css" text="Music Volume" />
-                        <Slider blockIncrement="3.0" max="0.0" min="-80.0" prefHeight="43.0" prefWidth="201.0" stylesheets="@stylesheet.css" />
+                        <Label id="options-titles" stylesheets="@stylesheet.css" text="Music Volume" textAlignment="CENTER" />
+                        <Slider fx:id="slider" blockIncrement="3.0" max="0.0" min="-80.0" prefHeight="43.0" prefWidth="201.0" stylesheets="@stylesheet.css" />
                      </children>
                   </VBox>
                </children>

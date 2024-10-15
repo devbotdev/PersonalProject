@@ -18,7 +18,7 @@ import me.ib.PersonalProject.util.Utility;
 import java.io.IOException;
 import java.util.Objects;
 
-public final class MainMenuController {
+public final class MainController {
 
     @FXML
     public BorderPane mainPane;
@@ -32,11 +32,12 @@ public final class MainMenuController {
     public Button launchButton, optionsButton, exitButton;
     @FXML
     public StackPane stackPane;
-
-
+    
     @FXML
     public void initialize() {
         new StarryBackground(bgPane);
+
+        launchButton.setOnAction(this::simulate);
 
         optionsButton.setOnAction(this::optionsMenu);
 
@@ -48,18 +49,40 @@ public final class MainMenuController {
             Utility.state = State.TITLE_OPTIONS;
 
             Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/titleoptions.fxml")));
-            Stage newStage = new Stage();
+            Stage stage = new Stage();
             Scene scene = new Scene(root);
 
-            newStage.initOwner(((Node) event.getSource()).getScene().getWindow());
-            newStage.initModality(Modality.APPLICATION_MODAL);
-            newStage.setScene(scene);
+            stage.initOwner(((Node) event.getSource()).getScene().getWindow());
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
 
-            newStage.setTitle("Options");
+            stage.setTitle("Options");
 
-            newStage.getIcons().add(Utility.getResourceAsImage(Utility.optionsIcon));
+            stage.getIcons().add(Utility.getResourceAsImage(Utility.optionsIcon));
 
-            newStage.show();
+            stage.setOnCloseRequest(event1 -> Utility.state = State.MAIN_MENU);
+
+            stage.show();
+        } catch (IOException ioException) {
+            throw new RuntimeException(ioException);
+        }
+    }
+
+    private void simulate(ActionEvent event) {
+        try {
+            Utility.state = State.SIMULATION;
+
+            Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/simulator.fxml")));
+            Scene scene = new Scene(root);
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.setTitle("Simulator");
+
+            stage.getIcons().add(Utility.getResourceAsImage(Utility.optionsIcon));
+            stage.setFullScreen(true);
+
+            stage.show();
         } catch (IOException ioException) {
             throw new RuntimeException(ioException);
         }
