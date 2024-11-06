@@ -3,14 +3,18 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Sphere?>
 
-<StackPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.PersonalProject.control.Controller">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.PersonalProject.simulator.Controller">
    <children>
       <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0" />
       <BorderPane prefHeight="540.0" prefWidth="960.0">
          <center>
-            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+            <BorderPane prefHeight="540.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+               <center>
+                  <Sphere fx:id="sun" radius="50" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
          </center>
       </BorderPane>
    </children>

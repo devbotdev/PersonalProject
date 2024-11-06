@@ -12,12 +12,15 @@ package me.ib.PersonalProject.simulator;
  */
 
 import com.sun.istack.internal.Nullable;
+import javafx.scene.shape.Sphere;
 
-public abstract class Planet {
+public abstract class Planet extends Controller {
     private boolean isDwarf = false;
+    private boolean isSun = false;
     public final Moon[] moons;
     public final Ring[] rings;
     private final int planetDiameter;
+    private final String orbitString;
     private final long distanceFromTheSun;
     private final String dayTime;
     private double TEMPERATURE_MAX, TEMPERATURE_MIN, TEMPERATURE_AVG;
@@ -26,6 +29,19 @@ public abstract class Planet {
     public long timeCreated = 4500000000L;
     public final String mass;
 
+    public abstract void initializePlanet(Sphere sphere);
+    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, String orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass) {
+        this.moons = moons;
+        this.rings = rings;
+        this.distanceFromTheSun = distanceFromTheSun;
+        this.orbitString = orbitTime;
+        this.planetDiameter = planetDiameter;
+        this.dayTime = dayTime;
+        this.axisOfRotationTilt = axisOfRotationTilt;
+        this.mass = mass + " kg";
+
+        this.orbitTime = 0;
+    }
     protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, double orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass) {
         this.moons = moons;
         this.rings = rings;
@@ -35,6 +51,8 @@ public abstract class Planet {
         this.dayTime = dayTime;
         this.axisOfRotationTilt = axisOfRotationTilt;
         this.mass = mass + " kg";
+
+        this.orbitString = null;
     }
 
     public void setTemperature(double max, double min, double avg) {
@@ -140,5 +158,16 @@ public abstract class Planet {
 
     public double getAvgTemperature() {
         return TEMPERATURE_AVG;
+    }
+
+    public boolean isSun() {
+        return isSun;
+    }
+
+    public void setSun() {
+        isSun = true;
+    }
+    public String getOrbitString() {
+        return orbitString;
     }
 }

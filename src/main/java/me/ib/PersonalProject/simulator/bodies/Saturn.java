@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Moon;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.simulator.Ring;
@@ -25,5 +26,10 @@ public class Saturn extends Planet {
         rings[5] = new Ring("G", 0);
         rings[6] = new Ring("E", 282000);
         rings[7] = new Ring("Phoebe", 282000);
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }

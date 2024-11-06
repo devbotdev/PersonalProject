@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies.dwarf;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Moon;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.util.Utility;
@@ -13,5 +14,10 @@ public class Makemake extends Planet {
         setSunlightTravelTime(6, 20, 0);
 
         moons[0] = new Moon("S/2015 (136472) 1, nicknamed MK 2", null, 160, 20900);
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }

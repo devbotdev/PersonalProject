@@ -8,7 +8,7 @@ import java.util.Objects;
 public abstract class Utility {
     public static State state;
     public static final String optionsIcon = "optionsIcon.png";
-
+    public final static String directory = "me.ib/";
     //Should be png icon
     public static Image getResourceAsImage(String fileName) {
         return new Image(Objects.requireNonNull(Main.class.getClassLoader().getResourceAsStream("me.ib/" + fileName)));
@@ -19,6 +19,8 @@ public abstract class Utility {
             return (long) (i * 1_000_000_000L);
         } else if (Objects.equals(s, "m") ||  Objects.equals(s, "million")) {
             return (long) (i * 1_000_000L);
+        } else if (s.isEmpty()){
+            return 0;
         } else {
             throw new IllegalArgumentException();
         }

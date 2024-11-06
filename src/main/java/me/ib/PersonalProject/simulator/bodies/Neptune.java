@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Moon;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.simulator.Ring;
@@ -12,5 +13,10 @@ public class Neptune extends Planet {
                 49528, 60190, 16 + " hours", 28, "1.02×10^26");
 
         setTemperature(0, -235, -210);
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }

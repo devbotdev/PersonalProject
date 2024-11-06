@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.util.Utility;
 
@@ -11,5 +12,10 @@ public class Mercury extends Planet {
         setTemperature(430, -180, 167);
 
         setSunlightTravelTime(0, 3.2, 0);
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }

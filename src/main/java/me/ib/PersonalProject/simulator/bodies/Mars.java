@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Moon;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.util.Utility;
@@ -16,5 +17,10 @@ public class Mars extends Planet {
 
         moons[0] = new Moon("Phobos", null, 0, 0);
         moons[1] = new Moon("Deimos", null, 0, 0);
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }

@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies.dwarf;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.util.Utility;
 
@@ -12,5 +13,10 @@ public class Ceres extends Planet {
         dwarfPlanet();
 
         setSunlightTravelTime(0, 22, 0);
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }

@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Moon;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.simulator.Ring;
@@ -19,5 +20,10 @@ public class Jupiter extends Planet {
         setTemperature(-110);
 
         setSunlightTravelTime(0, 43, 0);
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }

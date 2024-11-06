@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies.dwarf;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.util.Utility;
 
@@ -11,5 +12,10 @@ public class Eris extends Planet {
         setSunlightTravelTime(9, 0, 0);
 
         setTemperature(-217, -243);
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }

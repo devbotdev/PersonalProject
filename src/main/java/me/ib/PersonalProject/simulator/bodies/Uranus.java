@@ -1,5 +1,6 @@
 package me.ib.PersonalProject.simulator.bodies;
 
+import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Moon;
 import me.ib.PersonalProject.simulator.Planet;
 import me.ib.PersonalProject.simulator.Ring;
@@ -28,5 +29,10 @@ public class Uranus extends Planet {
         rings[10] = new Ring("Epsilon");
         rings[11] = new Ring("Nu");
         rings[12] = new Ring("Mu");
+    }
+
+    @Override
+    public void initializePlanet(Sphere sphere) {
+
     }
 }
