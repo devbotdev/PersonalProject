@@ -8,11 +8,13 @@ import me.ib.PersonalProject.util.Utility;
 
 public class Neptune extends Planet {
 
-    public Neptune() {
+    public Neptune(Sphere sphere) {
         super(new Moon[16], new Ring[9], Utility.convertToNum(4.503, "billion"),
-                49528, 60190, 16 + " hours", 28, "1.02×10^26");
+                49528, 60190, 16 + " hours", 28, "1.02×10^26", sphere);
 
         setTemperature(0, -235, -210);
+
+        setObjectTexture(sphere, "neptunemap.jpg");
     }
 
     @Override

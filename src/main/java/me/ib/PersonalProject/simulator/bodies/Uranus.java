@@ -8,9 +8,9 @@ import me.ib.PersonalProject.util.Utility;
 
 public class Uranus extends Planet {
 
-    public Uranus() {
+    public Uranus(Sphere sphere) {
         super(new Moon[28], new Ring[13], Utility.convertToNum(2.877, "billion"),
-                51118, 30687, 17 + " hours", 97.77, "8.68 x 10^25");
+                51118, 30687, 17 + " hours", 97.77, "8.68 x 10^25", sphere);
 
         setSunlightTravelTime(2, 40, 0);
 
@@ -29,6 +29,8 @@ public class Uranus extends Planet {
         rings[10] = new Ring("Epsilon");
         rings[11] = new Ring("Nu");
         rings[12] = new Ring("Mu");
+
+        setObjectTexture(sphere, "uranusmap.jpg");
     }
 
     @Override

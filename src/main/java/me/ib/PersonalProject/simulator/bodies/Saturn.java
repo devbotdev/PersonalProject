@@ -8,9 +8,9 @@ import me.ib.PersonalProject.util.Utility;
 
 public class Saturn extends Planet {
 
-    public Saturn() {
+    public Saturn(Sphere sphere) {
         super(new Moon[146], new Ring[8], Utility.convertToNum(1.433, "billion"),
-                120500, 10756, 10.7 + " hours", 26.73, "5.7 x 10^26");
+                120500, 10756, 10.7 + " hours", 26.73, "5.7 x 10^26", sphere);
         setSunlightTravelTime(0, 80, 0);
 
         setTemperature(-178);
@@ -26,6 +26,8 @@ public class Saturn extends Planet {
         rings[5] = new Ring("G", 0);
         rings[6] = new Ring("E", 282000);
         rings[7] = new Ring("Phoebe", 282000);
+
+        setObjectTexture(sphere, "saturnmap.jpg");
     }
 
     @Override

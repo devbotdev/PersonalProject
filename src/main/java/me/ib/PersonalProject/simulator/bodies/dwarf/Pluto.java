@@ -7,17 +7,18 @@ import me.ib.PersonalProject.util.Utility;
 
 public class Pluto extends Planet {
 
-    public Pluto() {
+    public Pluto(Sphere sphere) {
         super(new Moon[5], null, Utility.convertToNum(5.9, "billion"),
-                2377, 90582, 153 + " hours", 57, "null");
+                2377, 90582, 153 + " hours", 57, "null", sphere);
 
         setSunlightTravelTime(5.5, 0, 0);
 
         setTemperature(-232);
+
+        setObjectTexture(sphere, "plutomap1k.jpg");
     }
 
     @Override
     public void initializePlanet(Sphere sphere) {
-
     }
 }

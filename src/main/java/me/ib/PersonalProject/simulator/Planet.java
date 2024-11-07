@@ -12,7 +12,10 @@ package me.ib.PersonalProject.simulator;
  */
 
 import com.sun.istack.internal.Nullable;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Sphere;
+import me.ib.PersonalProject.util.Utility;
 
 public abstract class Planet extends Controller {
     private boolean isDwarf = false;
@@ -30,7 +33,13 @@ public abstract class Planet extends Controller {
     public final String mass;
 
     public abstract void initializePlanet(Sphere sphere);
-    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, String orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass) {
+    public void actionEvent() {
+    }
+    public void setObjectTexture(Sphere sphere, String s) {
+        material.setDiffuseMap(Utility.getResourceAsImage("objectTextures/" + s));
+        sphere.setMaterial(material);
+    }
+    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, String orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass, Sphere sphere) {
         this.moons = moons;
         this.rings = rings;
         this.distanceFromTheSun = distanceFromTheSun;
@@ -41,8 +50,11 @@ public abstract class Planet extends Controller {
         this.mass = mass + " kg";
 
         this.orbitTime = 0;
+
+        initializePlanet(sphere);
+        actionEvent();
     }
-    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, double orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass) {
+    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, double orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass, Sphere sphere) {
         this.moons = moons;
         this.rings = rings;
         this.distanceFromTheSun = distanceFromTheSun;
@@ -53,6 +65,8 @@ public abstract class Planet extends Controller {
         this.mass = mass + " kg";
 
         this.orbitString = null;
+
+        initializePlanet(sphere);
     }
 
     public void setTemperature(double max, double min, double avg) {

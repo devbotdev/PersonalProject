@@ -7,9 +7,9 @@ import me.ib.PersonalProject.util.Utility;
 
 public class Makemake extends Planet {
 
-    public Makemake() {
+    public Makemake(Sphere sphere) {
         super(new Moon[1], null, Utility.convertToNum(9.8, "billion"),
-                1430, 111401, 22 + " hours", 0, "null");
+                1430, 111401, 22 + " hours", 0, "null", sphere);
 
         setSunlightTravelTime(6, 20, 0);
 

@@ -6,9 +6,9 @@ import me.ib.PersonalProject.util.Utility;
 
 public class Ceres extends Planet {
 
-    public Ceres() {
+    public Ceres(Sphere sphere) {
         super(null, null, Utility.convertToNum(413, "million"),
-                952, 1682, 9 + " hours", 0, "null");
+                952, 1682, 9 + " hours", 0, "null", sphere);
 
         dwarfPlanet();
 

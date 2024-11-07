@@ -8,9 +8,9 @@ import me.ib.PersonalProject.util.Utility;
 
 public class Jupiter extends Planet {
 
-    public Jupiter() {
+    public Jupiter(Sphere sphere) {
         super(new Moon[95], new Ring[4], Utility.convertToNum(778.5, "million"),
-                139822, 4333, 10.5 + " hours", 3, "1.9 × 10^27");
+                139822, 4333, 10.5 + " hours", 3, "1.9 × 10^27", sphere);
 
         moons[0] = new Moon("Ganymede", null, 0, 0);
         moons[1] = new Moon("Callisto", null,0,0);
@@ -20,10 +20,11 @@ public class Jupiter extends Planet {
         setTemperature(-110);
 
         setSunlightTravelTime(0, 43, 0);
+
+        setObjectTexture(sphere, "jupitermap.jpg");
     }
 
     @Override
     public void initializePlanet(Sphere sphere) {
-
     }
 }
