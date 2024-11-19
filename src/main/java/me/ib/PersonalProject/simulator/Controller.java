@@ -39,8 +39,9 @@ public class Controller {
     }
 
     private void updateOrbit(Arc orbit, Planet planet) {
-        double radiusX = sun.getLayoutX() - planet.getSphere().getLayoutX() + planet.getSphere().getRadius();
-        orbit.setRadiusX(Math.abs(radiusX));
+        double radiusX = Math.abs(sun.getLayoutX() - planet.getSphere().getLayoutX() + planet.getSphere().getRadius());
+        orbit.setRadiusX(radiusX);
+        orbit.setRadiusY(40 + radiusX/8);
     }
 
     private void createOrbit(Arc orbit, Planet planet) {
@@ -52,7 +53,7 @@ public class Controller {
         orbit.setCenterY(centerY);
 
         orbit.setRadiusX(radiusX);
-        orbit.setRadiusY(100);
+        orbit.setRadiusY(80 - radiusX / 5);
         orbit.setStartAngle(0);
         orbit.setLength(360);
 
