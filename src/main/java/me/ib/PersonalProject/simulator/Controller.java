@@ -4,9 +4,13 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
+import javafx.scene.shape.Arc;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Sphere;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import me.ib.PersonalProject.control.StarryBackground;
 import me.ib.PersonalProject.simulator.bodies.*;
@@ -28,7 +32,35 @@ public class Controller {
             stage.widthProperty().addListener((obs, oldVal, newVal) -> resizePlanets(stage));
             stage.heightProperty().addListener((obs, oldVal, newVal) -> resizePlanets(stage));
             resizePlanets(stage);
+
+            hoveredPlanetName.setTranslateY(hoveredPlanetName.getLayoutBounds().getHeight());
+            hoveredPlanetName.setVisible(true);
         });
+    }
+
+    private void updateOrbit(Arc orbit, Planet planet) {
+        double radiusX = sun.getLayoutX() - planet.getSphere().getLayoutX() + planet.getSphere().getRadius();
+        orbit.setRadiusX(Math.abs(radiusX));
+    }
+
+    private void createOrbit(Arc orbit, Planet planet) {
+        double centerX = sun.getLayoutX();
+        double centerY = sun.getLayoutY();
+        double radiusX = planet.getSphere().getLayoutX() + planet.getSphere().getRadius();
+
+        orbit.setCenterX(centerX);
+        orbit.setCenterY(centerY);
+
+        orbit.setRadiusX(radiusX);
+        orbit.setRadiusY(100);
+        orbit.setStartAngle(0);
+        orbit.setLength(360);
+
+        orbit.setLayoutX(centerX);
+        orbit.setLayoutY(centerY);
+        orbit.setFill(null);
+        orbit.setStroke(Color.GRAY);
+        orbit.setStrokeWidth(1);
     }
 
     public void setActions(Sphere planet) {
@@ -54,59 +86,78 @@ public class Controller {
         double rightDistance = totalWidth / (((double) numberOfPlanets / 2) + 1);
         double leftDistance = totalWidth / (((double) numberOfPlanets / 2));
 
-        Sphere planet;
-
         double newX;
 
         for (int i = 0; i < numberOfPlanets; i++) {
-            planet = (Sphere) planetsGroup.getChildren().get(i);
-            if (planet == glowSphere) continue;
+            if (planetsGroup.getChildren().get(i) == glowSphere) continue;
             if (i % 2 == 0) {
                 newX = centerX - (((double) i / 2) * leftDistance) / 2 - offset;
             } else {
                 newX = centerX + (((double) i / 2 + 1) * rightDistance) / 2 + offset;
             }
-            planet.setLayoutX(newX);
-            planet.setLayoutY(centerY);
+
+            planetsGroup.getChildren().get(i).setLayoutX(newX);
+            planetsGroup.getChildren().get(i).setLayoutY(centerY);
         }
+
+        updateOrbit(mercuryOrbit, mercury0);
+        updateOrbit(venusOrbit, venus0);
+        updateOrbit(earthOrbit, earth0);
+        updateOrbit(marsOrbit, mars0);
+        updateOrbit(ceresOrbit, ceres0);
+        updateOrbit(jupiterOrbit, jupiter0);
+        updateOrbit(saturnOrbit, saturn0);
+        updateOrbit(uranusOrbit, uranus0);
+        updateOrbit(neptuneOrbit, neptune0);
+        updateOrbit(plutoOrbit, pluto0);
+        updateOrbit(haumeaOrbit, haumea0);
+        updateOrbit(makemakeOrbit, makemake0);
+        updateOrbit(erisOrbit, eris0);
     }
 
     protected void shine(Sphere sphere) {
-        if (sphere == sun) {
+        if (sphere != sun) {
+            glowSphere.setVisible(true);
+            glowSphere.setLayoutX(sphere.getLayoutX());
+            glowSphere.setLayoutY(sphere.getLayoutY());
+            glowSphere.setRadius(sphere.getRadius() + 5);
+        } else {
             sunShine.setVisible(true);
-            return;
         }
 
-        glowSphere.setVisible(true);
-        glowSphere.setLayoutX(sphere.getLayoutX());
-        glowSphere.setLayoutY(sphere.getLayoutY());
-        glowSphere.setRadius(sphere.getRadius() + 5);
+        updateHoveredPlanetName(sphere.getId().substring(0, 1).toUpperCase() + sphere.getId().substring(1));
+    }
+
+    public void updateHoveredPlanetName(String planetName) {
+        hoveredPlanetName.setText(planetName);
     }
 
     protected void unshine(Sphere sphere) {
         if (sphere == sun) {
             sunShine.setVisible(false);
-            return;
+        } else {
+            glowSphere.setVisible(false);
         }
 
-        glowSphere.setVisible(false);
+        updateHoveredPlanetName("Solar System");
     }
 
+    private Planet sun0, mercury0, venus0, earth0, mars0, ceres0, jupiter0, saturn0, uranus0, neptune0, pluto0, haumea0, makemake0, eris0;
     private void initializePlanets() {
-        Planet sunO = new Sun(sun);
-        Planet mercury0 = new Mercury(mercury);
-        Planet venus0 = new Venus(venus);
-        Planet earth0 = new Earth(earth);
-        Planet mars0 = new Mars(mars);
-        Planet ceres0 = new Ceres(ceres);
-        Planet jupiter0 = new Jupiter(jupiter);
-        Planet saturn0 = new Saturn(saturn);
-        Planet uranus0 = new Uranus(uranus);
-        Planet neptune0 = new Neptune(neptune);
-        Planet pluto0 = new Pluto(pluto);
-        Planet haumea0 = new Haumea(haumea);
-        Planet makemake0 = new Makemake(makemake);
-        Planet eris0 = new Eris(eris);
+        sun0 = new Sun(sun);
+        mercury0 = new Mercury(mercury);
+        venus0 = new Venus(venus);
+        earth0 = new Earth(earth);
+        mars0 = new Mars(mars);
+        ceres0 = new Ceres(ceres);
+        jupiter0 = new Jupiter(jupiter);
+        saturn0 = new Saturn(saturn);
+        uranus0 = new Uranus(uranus);
+        neptune0 = new Neptune(neptune);
+        pluto0 = new Pluto(pluto);
+        haumea0 = new Haumea(haumea);
+        makemake0 = new Makemake(makemake);
+        eris0 = new Eris(eris);
 
         glowMaterial = new PhongMaterial(Color.WHITE.deriveColor(1, 1, 1, 0.3));
         glowMaterial.setSpecularColor(Color.TRANSPARENT);
@@ -116,6 +167,20 @@ public class Controller {
 
         sunShine.setMaterial(glowMaterial);
         sunShine.setVisible(false);
+
+        createOrbit(mercuryOrbit, mercury0);
+        createOrbit(venusOrbit, venus0);
+        createOrbit(earthOrbit, earth0);
+        createOrbit(marsOrbit, mars0);
+        createOrbit(ceresOrbit, ceres0);
+        createOrbit(jupiterOrbit, jupiter0);
+        createOrbit(saturnOrbit, saturn0);
+        createOrbit(uranusOrbit, uranus0);
+        createOrbit(neptuneOrbit, neptune0);
+        createOrbit(plutoOrbit, pluto0);
+        createOrbit(haumeaOrbit, haumea0);
+        createOrbit(makemakeOrbit, makemake0);
+        createOrbit(erisOrbit, eris0);
 
         setActions(sun);
         setActions(mercury);
@@ -169,4 +234,32 @@ public class Controller {
     protected Sphere makemake;
     @FXML
     protected Sphere eris;
+    @FXML
+    protected Text hoveredPlanetName;
+    @FXML
+    protected Arc mercuryOrbit;
+    @FXML
+    protected Arc venusOrbit;
+    @FXML
+    protected Arc earthOrbit;
+    @FXML
+    protected Arc marsOrbit;
+    @FXML
+    protected Arc ceresOrbit;
+    @FXML
+    protected Arc jupiterOrbit;
+    @FXML
+    protected Arc saturnOrbit;
+    @FXML
+    protected Arc uranusOrbit;
+    @FXML
+    protected Arc neptuneOrbit;
+    @FXML
+    protected Arc plutoOrbit;
+    @FXML
+    protected Arc haumeaOrbit;
+    @FXML
+    protected Arc makemakeOrbit;
+    @FXML
+    protected Arc erisOrbit;
 }

@@ -42,8 +42,6 @@
     -fx-alignment: CENTER;
 }
 
-/* CSS For Sliders */
-
 .slider {
     -fx-background-color: transparent;
     -fx-background-radius: 10;
@@ -57,21 +55,37 @@
 }
 
 .slider .thumb {
-    -fx-background-color: #66d9ef; /* a bright blue color */
-    -fx-background-radius: 50%; /* make it a circle */
+    -fx-background-color: #66d9ef;
+    -fx-background-radius: 50%;
     -fx-padding: 7.5;
     -fx-border-width: 1.5;
-    -fx-border-color: #fff; /* whiteish outline */
-    -fx-border-radius: 50%; /* match the circle shape */
+    -fx-border-color: #fff;
+    -fx-border-radius: 50%;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 5);
 }
 
 .slider .track .filled-track {
-    -fx-background-color: #66d9ef; /* same bright blue color as the thumb */
+    -fx-background-color: #66d9ef;
     -fx-background-radius: 10;
 }
 
 .slider .track .empty-track {
     -fx-background-color: #333;
     -fx-background-radius: 10;
+}
+
+#hovered-planet-name-box {
+    -fx-fill: rgba(0, 0, 0, 0.7);
+    -fx-border-color: linear-gradient(to right, #FFFFFF, #87CEFA, #000000);
+    -fx-border-width: 5;
+    -fx-border-radius: 15;
+    -fx-padding: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(135, 206, 250, 0.6), 12, 0, 0, 0);
+    -fx-opacity: 1;
+}
+#hovered-planet-name {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(to right, #FFFFFF, #87CEFA);
+    -fx-effect: dropshadow(one-pass-box, rgba(135, 206, 250, 0.7), 4, 0, 0, 0);
 }

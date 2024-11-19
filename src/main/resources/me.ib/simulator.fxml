@@ -4,11 +4,27 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Arc?>
 <?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.PersonalProject.simulator.Controller">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.PersonalProject.simulator.Controller">
    <children>
       <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0" />
+      <Text id="hovered-planet-name" fx:id="hoveredPlanetName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Solar System" StackPane.alignment="TOP_CENTER" />
+      <Arc fx:id="mercuryOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="venusOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="earthOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="marsOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="ceresOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="jupiterOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="saturnOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="uranusOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="neptuneOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="plutoOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="haumeaOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="makemakeOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Arc fx:id="erisOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
       <BorderPane prefHeight="540.0" prefWidth="960.0">
          <center>
             <StackPane>

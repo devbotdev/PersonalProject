@@ -20,11 +20,14 @@ public class Jupiter extends Planet {
         setTemperature(-110);
 
         setSunlightTravelTime(0, 43, 0);
-
-        setObjectTexture(sphere, "jupitermap.jpg");
     }
 
     @Override
     public void initializePlanet(Sphere sphere) {
+    }
+
+    @Override
+    public Sphere getSphere() {
+        return sphere;
     }
 }

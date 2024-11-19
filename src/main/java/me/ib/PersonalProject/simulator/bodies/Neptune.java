@@ -14,9 +14,11 @@ public class Neptune extends Planet {
 
         setTemperature(0, -235, -210);
 
-        setObjectTexture(sphere, "neptunemap.jpg");
     }
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
 

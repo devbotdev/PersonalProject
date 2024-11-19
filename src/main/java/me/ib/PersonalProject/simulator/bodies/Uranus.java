@@ -29,10 +29,11 @@ public class Uranus extends Planet {
         rings[10] = new Ring("Epsilon");
         rings[11] = new Ring("Nu");
         rings[12] = new Ring("Mu");
-
-        setObjectTexture(sphere, "uranusmap.jpg");
     }
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
 

@@ -18,11 +18,16 @@ public class Earth extends Planet {
 
         moons[0] = new Moon("Moon", null, 1738, 384400);
 
-        setObjectTexture(sphere, "earthmap1k.jpg");
+        getSphere();
     }
 
     @Override
     public void initializePlanet(Sphere sphere) {
 
+    }
+
+    @Override
+    public Sphere getSphere() {
+        return sphere;
     }
 }

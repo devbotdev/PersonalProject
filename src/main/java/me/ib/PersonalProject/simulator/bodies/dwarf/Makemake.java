@@ -15,7 +15,10 @@ public class Makemake extends Planet {
 
         moons[0] = new Moon("S/2015 (136472) 1, nicknamed MK 2", null, 160, 20900);
     }
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
 

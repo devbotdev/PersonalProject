@@ -14,10 +14,11 @@ public class Pluto extends Planet {
         setSunlightTravelTime(5.5, 0, 0);
 
         setTemperature(-232);
-
-        setObjectTexture(sphere, "plutomap1k.jpg");
     }
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
     }

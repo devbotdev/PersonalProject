@@ -14,7 +14,10 @@ public class Ceres extends Planet {
 
         setSunlightTravelTime(0, 22, 0);
     }
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
 

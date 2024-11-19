@@ -12,7 +12,10 @@ public class Haumea extends Planet {
 
         setSunlightTravelTime(0, 0, 0);
     }
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
 

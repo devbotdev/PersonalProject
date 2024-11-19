@@ -26,10 +26,11 @@ public class Saturn extends Planet {
         rings[5] = new Ring("G", 0);
         rings[6] = new Ring("E", 282000);
         rings[7] = new Ring("Phoebe", 282000);
-
-        setObjectTexture(sphere, "saturnmap.jpg");
     }
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
 

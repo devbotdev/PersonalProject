@@ -17,11 +17,12 @@ public class Mars extends Planet {
 
         moons[0] = new Moon("Phobos", null, 0, 0);
         moons[1] = new Moon("Deimos", null, 0, 0);
-
-        setObjectTexture(sphere, "mars_1k_color.jpg");
     }
 
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
     }

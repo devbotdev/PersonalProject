@@ -31,6 +31,7 @@ public abstract class Planet extends Controller {
     public final double axisOfRotationTilt, orbitTime;
     public long timeCreated = 4500000000L;
     public final String mass;
+    protected final Sphere sphere;
 
     public abstract void initializePlanet(Sphere sphere);
     public void actionEvent() {
@@ -48,11 +49,13 @@ public abstract class Planet extends Controller {
         this.dayTime = dayTime;
         this.axisOfRotationTilt = axisOfRotationTilt;
         this.mass = mass + " kg";
-
+        this.sphere = sphere;
         this.orbitTime = 0;
 
         initializePlanet(sphere);
         actionEvent();
+
+        setObjectTexture(sphere, sphere.getId().toLowerCase() + ".jpg");
     }
     protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, double orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass, Sphere sphere) {
         this.moons = moons;
@@ -63,10 +66,12 @@ public abstract class Planet extends Controller {
         this.dayTime = dayTime;
         this.axisOfRotationTilt = axisOfRotationTilt;
         this.mass = mass + " kg";
-
+        this.sphere = sphere;
         this.orbitString = null;
 
         initializePlanet(sphere);
+
+        setObjectTexture(sphere, sphere.getId().toLowerCase() + ".jpg");
     }
 
     public void setTemperature(double max, double min, double avg) {
@@ -184,4 +189,5 @@ public abstract class Planet extends Controller {
     public String getOrbitString() {
         return orbitString;
     }
+    public abstract Sphere getSphere();
 }

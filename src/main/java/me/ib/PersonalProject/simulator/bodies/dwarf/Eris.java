@@ -13,6 +13,10 @@ public class Eris extends Planet {
 
         setTemperature(-217, -243);
     }
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
 
     @Override
     public void initializePlanet(Sphere sphere) {

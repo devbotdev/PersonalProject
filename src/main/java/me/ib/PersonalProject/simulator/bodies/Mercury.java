@@ -12,10 +12,11 @@ public class Mercury extends Planet {
         setTemperature(430, -180, 167);
 
         setSunlightTravelTime(0, 3.2, 0);
-
-        setObjectTexture(sphere, "mercurymap.jpg");
     }
-
+    @Override
+    public Sphere getSphere() {
+        return sphere;
+    }
     @Override
     public void initializePlanet(Sphere sphere) {
 
