@@ -7,9 +7,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
-import javafx.scene.shape.Arc;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.Sphere;
+import javafx.scene.shape.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import me.ib.PersonalProject.control.StarryBackground;
@@ -38,30 +36,46 @@ public class Controller {
         });
     }
 
-    private void updateOrbit(Arc orbit, Planet planet) {
+    private void updateOrbit(Arc topOrbit, Arc bottomOrbit, Planet planet) {
         double radiusX = Math.abs(sun.getLayoutX() - planet.getSphere().getLayoutX() + planet.getSphere().getRadius());
-        orbit.setRadiusX(radiusX);
-        orbit.setRadiusY(40 + radiusX/8);
+        topOrbit.setRadiusX(radiusX);
+        topOrbit.setRadiusY(40 + radiusX / 8);
+        topOrbit.setTranslateY((sun.getRadius() / - 1.45) + (8200 / topOrbit.getRadiusX()));
+
+        bottomOrbit.setRadiusX(radiusX);
+        bottomOrbit.setRadiusY(40 + radiusX / 8);
+        bottomOrbit.setTranslateY((sun.getRadius() / 1.45) - (8200 / topOrbit.getRadiusX()));
+
+        topOrbit.setVisible(true);
+        bottomOrbit.setVisible(true);
     }
 
-    private void createOrbit(Arc orbit, Planet planet) {
-        double centerX = sun.getLayoutX();
-        double centerY = sun.getLayoutY();
+    private void createOrbit(Arc topOrbit, Arc bottomOrbit, Planet planet) {
         double radiusX = planet.getSphere().getLayoutX() + planet.getSphere().getRadius();
 
-        orbit.setCenterX(centerX);
-        orbit.setCenterY(centerY);
+        topOrbit.setVisible(false);
+        bottomOrbit.setVisible(false);
 
-        orbit.setRadiusX(radiusX);
-        orbit.setRadiusY(80 - radiusX / 5);
-        orbit.setStartAngle(0);
-        orbit.setLength(360);
+        topOrbit.setRadiusX(radiusX);
+        topOrbit.setRadiusY(radiusX / 2);
+        topOrbit.setStartAngle(0);
+        topOrbit.setLength(180);
 
-        orbit.setLayoutX(centerX);
-        orbit.setLayoutY(centerY);
-        orbit.setFill(null);
-        orbit.setStroke(Color.GRAY);
-        orbit.setStrokeWidth(1);
+        bottomOrbit.setRadiusX(radiusX);
+        bottomOrbit.setRadiusY(radiusX / 2);
+        bottomOrbit.setStartAngle(180);
+        bottomOrbit.setLength(180);
+
+        topOrbit.setFill(null);
+        topOrbit.setStroke(Color.GRAY);
+        topOrbit.setStrokeWidth(1);
+
+        bottomOrbit.setFill(null);
+        bottomOrbit.setStroke(Color.GRAY);
+        bottomOrbit.setStrokeWidth(1);
+
+        topOrbit.setType(ArcType.OPEN);
+        bottomOrbit.setType(ArcType.OPEN);
     }
 
     public void setActions(Sphere planet) {
@@ -101,19 +115,19 @@ public class Controller {
             planetsGroup.getChildren().get(i).setLayoutY(centerY);
         }
 
-        updateOrbit(mercuryOrbit, mercury0);
-        updateOrbit(venusOrbit, venus0);
-        updateOrbit(earthOrbit, earth0);
-        updateOrbit(marsOrbit, mars0);
-        updateOrbit(ceresOrbit, ceres0);
-        updateOrbit(jupiterOrbit, jupiter0);
-        updateOrbit(saturnOrbit, saturn0);
-        updateOrbit(uranusOrbit, uranus0);
-        updateOrbit(neptuneOrbit, neptune0);
-        updateOrbit(plutoOrbit, pluto0);
-        updateOrbit(haumeaOrbit, haumea0);
-        updateOrbit(makemakeOrbit, makemake0);
-        updateOrbit(erisOrbit, eris0);
+        updateOrbit(mercuryOrbit, mercuryOrbit1, mercury0);
+        updateOrbit(venusOrbit, venusOrbit1, venus0);
+        updateOrbit(earthOrbit, earthOrbit1, earth0);
+        updateOrbit(marsOrbit, marsOrbit1, mars0);
+        updateOrbit(ceresOrbit, ceresOrbit1, ceres0);
+        updateOrbit(jupiterOrbit, jupiterOrbit1, jupiter0);
+        updateOrbit(saturnOrbit, saturnOrbit1, saturn0);
+        updateOrbit(uranusOrbit, uranusOrbit1, uranus0);
+        updateOrbit(neptuneOrbit, neptuneOrbit1, neptune0);
+        updateOrbit(plutoOrbit, plutoOrbit1, pluto0);
+        updateOrbit(haumeaOrbit, haumeaOrbit1, haumea0);
+        updateOrbit(makemakeOrbit, makemakeOrbit1, makemake0);
+        updateOrbit(erisOrbit, erisOrbit1, eris0);
     }
 
     protected void shine(Sphere sphere) {
@@ -144,6 +158,7 @@ public class Controller {
     }
 
     private Planet sun0, mercury0, venus0, earth0, mars0, ceres0, jupiter0, saturn0, uranus0, neptune0, pluto0, haumea0, makemake0, eris0;
+
     private void initializePlanets() {
         sun0 = new Sun(sun);
         mercury0 = new Mercury(mercury);
@@ -169,19 +184,19 @@ public class Controller {
         sunShine.setMaterial(glowMaterial);
         sunShine.setVisible(false);
 
-        createOrbit(mercuryOrbit, mercury0);
-        createOrbit(venusOrbit, venus0);
-        createOrbit(earthOrbit, earth0);
-        createOrbit(marsOrbit, mars0);
-        createOrbit(ceresOrbit, ceres0);
-        createOrbit(jupiterOrbit, jupiter0);
-        createOrbit(saturnOrbit, saturn0);
-        createOrbit(uranusOrbit, uranus0);
-        createOrbit(neptuneOrbit, neptune0);
-        createOrbit(plutoOrbit, pluto0);
-        createOrbit(haumeaOrbit, haumea0);
-        createOrbit(makemakeOrbit, makemake0);
-        createOrbit(erisOrbit, eris0);
+        createOrbit(mercuryOrbit, mercuryOrbit1, mercury0);
+        createOrbit(venusOrbit, venusOrbit1, venus0);
+        createOrbit(earthOrbit, earthOrbit1, earth0);
+        createOrbit(marsOrbit, marsOrbit1, mars0);
+        createOrbit(ceresOrbit, ceresOrbit1, ceres0);
+        createOrbit(jupiterOrbit, jupiterOrbit1, jupiter0);
+        createOrbit(saturnOrbit, saturnOrbit1, saturn0);
+        createOrbit(uranusOrbit, uranusOrbit1, uranus0);
+        createOrbit(neptuneOrbit, neptuneOrbit1, neptune0);
+        createOrbit(plutoOrbit, plutoOrbit1, pluto0);
+        createOrbit(haumeaOrbit, haumeaOrbit1, haumea0);
+        createOrbit(makemakeOrbit, makemakeOrbit1, makemake0);
+        createOrbit(erisOrbit, erisOrbit1, eris0);
 
         setActions(sun);
         setActions(mercury);
@@ -263,4 +278,30 @@ public class Controller {
     protected Arc makemakeOrbit;
     @FXML
     protected Arc erisOrbit;
+    @FXML
+    protected Arc mercuryOrbit1;
+    @FXML
+    protected Arc venusOrbit1;
+    @FXML
+    protected Arc earthOrbit1;
+    @FXML
+    protected Arc marsOrbit1;
+    @FXML
+    protected Arc ceresOrbit1;
+    @FXML
+    protected Arc jupiterOrbit1;
+    @FXML
+    protected Arc saturnOrbit1;
+    @FXML
+    protected Arc uranusOrbit1;
+    @FXML
+    protected Arc neptuneOrbit1;
+    @FXML
+    protected Arc plutoOrbit1;
+    @FXML
+    protected Arc haumeaOrbit1;
+    @FXML
+    protected Arc makemakeOrbit1;
+    @FXML
+    protected Arc erisOrbit1;
 }
