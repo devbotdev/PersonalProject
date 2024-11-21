@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Group?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
@@ -25,7 +26,7 @@
       <Arc fx:id="haumeaOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
       <Arc fx:id="makemakeOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
       <Arc fx:id="erisOrbit" fill="DODGERBLUE" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-      <BorderPane prefHeight="540.0" prefWidth="960.0">
+      <BorderPane prefHeight="700.0" prefWidth="1000.0">
          <center>
             <StackPane>
                <Sphere fx:id="sunShine" radius="105.0" />
@@ -59,6 +60,7 @@
                   <Sphere fx:id="makemake" layoutX="673.0" radius="22.5" />
                   <Sphere fx:id="eris" layoutX="-235.0" radius="23.0" />
                </Group>
+               <CheckBox id="checkbox" fx:id="orbitCheckBox" mnemonicParsing="false" selected="true" text="Planet Orbit" textFill="WHITE" translateX="-20.0" translateY="30.0" StackPane.alignment="TOP_RIGHT" />
             </StackPane>
          </center>
       </BorderPane>

@@ -23,7 +23,9 @@ public final class ProjectFrame extends Application {
 
         primaryStage.setTitle("Personal Project");
 
+        primaryStage.setMaximized(true);
         primaryStage.setFullScreen(true);
+        primaryStage.setResizable(false);
 
         primaryStage.setScene(scene);
         primaryStage.show();

@@ -1,8 +1,10 @@
 package me.ib.PersonalProject.simulator;
 
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
+import javafx.scene.control.CheckBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
@@ -18,7 +20,6 @@ public class Controller {
 
     public final PhongMaterial material = new PhongMaterial();
     private PhongMaterial glowMaterial;
-
     @FXML
     public void initialize() {
         new StarryBackground(bgPane, 400, 150, 50, 95);
@@ -78,9 +79,69 @@ public class Controller {
         bottomOrbit.setType(ArcType.OPEN);
     }
 
+    private void toggleOrbit(ActionEvent e) {
+        if (orbitCheckBox.isSelected()) {
+            mercuryOrbit.setVisible(true);
+            venusOrbit.setVisible(true);
+            earthOrbit.setVisible(true);
+            marsOrbit.setVisible(true);
+            ceresOrbit.setVisible(true);
+            jupiterOrbit.setVisible(true);
+            saturnOrbit.setVisible(true);
+            uranusOrbit.setVisible(true);
+            neptuneOrbit.setVisible(true);
+            plutoOrbit.setVisible(true);
+            haumeaOrbit.setVisible(true);
+            makemakeOrbit.setVisible(true);
+            erisOrbit.setVisible(true);
+            mercuryOrbit1.setVisible(true);
+            venusOrbit1.setVisible(true);
+            earthOrbit1.setVisible(true);
+            marsOrbit1.setVisible(true);
+            ceresOrbit1.setVisible(true);
+            jupiterOrbit1.setVisible(true);
+            saturnOrbit1.setVisible(true);
+            uranusOrbit1.setVisible(true);
+            neptuneOrbit1.setVisible(true);
+            plutoOrbit1.setVisible(true);
+            haumeaOrbit1.setVisible(true);
+            makemakeOrbit1.setVisible(true);
+            erisOrbit1.setVisible(true);
+        } else {
+            mercuryOrbit.setVisible(false);
+            venusOrbit.setVisible(false);
+            earthOrbit.setVisible(false);
+            marsOrbit.setVisible(false);
+            ceresOrbit.setVisible(false);
+            jupiterOrbit.setVisible(false);
+            saturnOrbit.setVisible(false);
+            uranusOrbit.setVisible(false);
+            neptuneOrbit.setVisible(false);
+            plutoOrbit.setVisible(false);
+            haumeaOrbit.setVisible(false);
+            makemakeOrbit.setVisible(false);
+            erisOrbit.setVisible(false);
+            mercuryOrbit1.setVisible(false);
+            venusOrbit1.setVisible(false);
+            earthOrbit1.setVisible(false);
+            marsOrbit1.setVisible(false);
+            ceresOrbit1.setVisible(false);
+            jupiterOrbit1.setVisible(false);
+            saturnOrbit1.setVisible(false);
+            uranusOrbit1.setVisible(false);
+            neptuneOrbit1.setVisible(false);
+            plutoOrbit1.setVisible(false);
+            haumeaOrbit1.setVisible(false);
+            makemakeOrbit1.setVisible(false);
+            erisOrbit1.setVisible(false);
+
+        }
+    }
     public void setActions(Sphere planet) {
         planet.setOnMouseEntered(event -> shine(planet));
         planet.setOnMouseExited(event -> unshine(planet));
+
+        orbitCheckBox.setOnAction(this::toggleOrbit);
     }
 
     private void resizePlanets(Stage stage) {
@@ -304,4 +365,6 @@ public class Controller {
     protected Arc makemakeOrbit1;
     @FXML
     protected Arc erisOrbit1;
+    @FXML
+    protected CheckBox orbitCheckBox;
 }

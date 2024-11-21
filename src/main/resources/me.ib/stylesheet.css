@@ -74,18 +74,14 @@
     -fx-background-radius: 10;
 }
 
-#hovered-planet-name-box {
-    -fx-fill: rgba(0, 0, 0, 0.7);
-    -fx-border-color: linear-gradient(to right, #FFFFFF, #87CEFA, #000000);
-    -fx-border-width: 5;
-    -fx-border-radius: 15;
-    -fx-padding: 12;
-    -fx-effect: dropshadow(three-pass-box, rgba(135, 206, 250, 0.6), 12, 0, 0, 0);
-    -fx-opacity: 1;
-}
 #hovered-planet-name {
     -fx-font-size: 25px;
     -fx-font-weight: bold;
     -fx-fill: linear-gradient(to right, #FFFFFF, #87CEFA);
     -fx-effect: dropshadow(one-pass-box, rgba(135, 206, 250, 0.7), 4, 0, 0, 0);
+}
+
+#checkbox {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
 }
