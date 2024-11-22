@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.shape.Sphere?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.PersonalProject.simulator.Controller">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.PersonalProject.simulator.Controller">
    <children>
       <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0" />
       <Text id="hovered-planet-name" fx:id="hoveredPlanetName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Solar System" StackPane.alignment="TOP_CENTER" />
@@ -61,6 +62,7 @@
                   <Sphere fx:id="eris" layoutX="-235.0" radius="23.0" />
                </Group>
                <CheckBox id="checkbox" fx:id="orbitCheckBox" mnemonicParsing="false" selected="true" text="Planet Orbit" textFill="WHITE" translateX="-20.0" translateY="30.0" StackPane.alignment="TOP_RIGHT" />
+               <Button fx:id="fullscreenButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" scaleX="0.5" scaleY="0.5" text="Fullscreen" translateX="20.0" translateY="-15.0" StackPane.alignment="BOTTOM_RIGHT" />
             </StackPane>
          </center>
       </BorderPane>

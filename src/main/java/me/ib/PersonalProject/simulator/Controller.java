@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
@@ -20,6 +21,8 @@ public class Controller {
 
     public final PhongMaterial material = new PhongMaterial();
     private PhongMaterial glowMaterial;
+    private Stage stage;
+
     @FXML
     public void initialize() {
         new StarryBackground(bgPane, 400, 150, 50, 95);
@@ -27,10 +30,16 @@ public class Controller {
         initializePlanets();
 
         Platform.runLater(() -> {
-            Stage stage = (Stage) bgPane.getScene().getWindow();
+            stage = (Stage) bgPane.getScene().getWindow();
             stage.widthProperty().addListener((obs, oldVal, newVal) -> resizePlanets(stage));
             stage.heightProperty().addListener((obs, oldVal, newVal) -> resizePlanets(stage));
             resizePlanets(stage);
+
+            stage.fullScreenProperty().addListener((observable, oldValue, newValue) -> {
+                if (!newValue) fullscreenButton.setVisible(true);
+            });
+
+            fullscreenButton.setVisible(false);
 
             hoveredPlanetName.setTranslateY(hoveredPlanetName.getLayoutBounds().getHeight());
             hoveredPlanetName.setVisible(true);
@@ -134,7 +143,6 @@ public class Controller {
             haumeaOrbit1.setVisible(false);
             makemakeOrbit1.setVisible(false);
             erisOrbit1.setVisible(false);
-
         }
     }
     public void setActions(Sphere planet) {
@@ -142,6 +150,12 @@ public class Controller {
         planet.setOnMouseExited(event -> unshine(planet));
 
         orbitCheckBox.setOnAction(this::toggleOrbit);
+        fullscreenButton.setOnAction(event -> setFullscreen());
+    }
+
+    public void setFullscreen() {
+        stage.setFullScreen(true);
+        fullscreenButton.setVisible(false);
     }
 
     private void resizePlanets(Stage stage) {
@@ -367,4 +381,6 @@ public class Controller {
     protected Arc erisOrbit1;
     @FXML
     protected CheckBox orbitCheckBox;
+    @FXML
+    protected Button fullscreenButton;
 }
