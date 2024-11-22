@@ -42,8 +42,9 @@ public class Controller {
             fullscreenButton.setVisible(false);
 
             hoveredPlanetName.setTranslateY(hoveredPlanetName.getLayoutBounds().getHeight());
-            hoveredPlanetName.setVisible(true);
         });
+
+        hoveredPlanetName.setVisible(true);
     }
 
     private void updateOrbit(Arc topOrbit, Arc bottomOrbit, Planet planet) {
@@ -55,16 +56,10 @@ public class Controller {
         bottomOrbit.setRadiusX(radiusX);
         bottomOrbit.setRadiusY(40 + radiusX / 8);
         bottomOrbit.setTranslateY((sun.getRadius() / 1.45) - (8200 / topOrbit.getRadiusX()));
-
-        topOrbit.setVisible(true);
-        bottomOrbit.setVisible(true);
     }
 
     private void createOrbit(Arc topOrbit, Arc bottomOrbit, Planet planet) {
         double radiusX = planet.getSphere().getLayoutX() + planet.getSphere().getRadius();
-
-        topOrbit.setVisible(false);
-        bottomOrbit.setVisible(false);
 
         topOrbit.setRadiusX(radiusX);
         topOrbit.setRadiusY(radiusX / 2);
