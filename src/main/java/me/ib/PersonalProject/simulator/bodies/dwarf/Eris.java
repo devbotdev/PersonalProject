@@ -12,6 +12,8 @@ public class Eris extends Planet {
         setSunlightTravelTime(9, 0, 0);
 
         setTemperature(-217, -243);
+
+        dwarfPlanet();
     }
     @Override
     public Sphere getSphere() {

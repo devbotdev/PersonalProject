@@ -15,8 +15,11 @@ public class Mars extends Planet {
 
         setTemperature(27, -143);
 
-        moons[0] = new Moon("Phobos", null, 0, 0);
-        moons[1] = new Moon("Deimos", null, 0, 0);
+        moons[0] = new Moon("Phobos", null, 22, 9377);
+        moons[1] = new Moon("Deimos", null, 12, 23460);
+
+        moons[0].setObjectTexture("phobos.jpg");
+        moons[1].setObjectTexture("deimos.jpg");
     }
 
     @Override

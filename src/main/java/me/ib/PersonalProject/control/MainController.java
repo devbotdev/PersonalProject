@@ -48,7 +48,7 @@ public final class MainController {
         try {
             Utility.state = State.TITLE_OPTIONS;
 
-            Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/titleoptions.fxml")));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/TitleOptions.fxml")));
             Stage stage = new Stage();
             Scene scene = new Scene(root);
 
@@ -72,7 +72,7 @@ public final class MainController {
         try {
             Utility.state = State.SIMULATION;
 
-            Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/simulator.fxml")));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/Simulator.fxml")));
             Scene scene = new Scene(root);
 
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

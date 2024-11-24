@@ -17,8 +17,7 @@ public class Earth extends Planet {
         setTemperature(70, -89, 15);
 
         moons[0] = new Moon("Moon", null, 1738, 384400);
-
-        getSphere();
+        moons[0].setObjectTexture("moon.jpg");
     }
 
     @Override

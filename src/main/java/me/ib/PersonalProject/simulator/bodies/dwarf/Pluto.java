@@ -14,6 +14,8 @@ public class Pluto extends Planet {
         setSunlightTravelTime(5.5, 0, 0);
 
         setTemperature(-232);
+
+        dwarfPlanet();
     }
     @Override
     public Sphere getSphere() {

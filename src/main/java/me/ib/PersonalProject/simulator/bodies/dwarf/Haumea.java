@@ -11,6 +11,8 @@ public class Haumea extends Planet {
                 1740, 285, 4 + " hours", 0, "null", sphere);
 
         setSunlightTravelTime(0, 0, 0);
+
+        dwarfPlanet();
     }
     @Override
     public Sphere getSphere() {

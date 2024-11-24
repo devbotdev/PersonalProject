@@ -17,6 +17,9 @@ import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.util.Utility;
 
+import java.time.LocalTime;
+import java.util.Objects;
+
 public abstract class Planet extends Controller {
     private boolean isDwarf = false;
     private boolean isSun = false;

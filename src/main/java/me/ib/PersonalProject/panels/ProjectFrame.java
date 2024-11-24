@@ -10,6 +10,7 @@ import me.ib.PersonalProject.Main;
 import me.ib.PersonalProject.util.State;
 import me.ib.PersonalProject.util.Utility;
 
+import java.awt.*;
 import java.util.Objects;
 
 public final class ProjectFrame extends Application {
@@ -18,7 +19,7 @@ public final class ProjectFrame extends Application {
     public void start(Stage primaryStage) throws Exception {
         Utility.state = State.MAIN_MENU;
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/titlescreen.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("me.ib/TitleScreen.fxml")));
 
         Scene scene = new Scene(root);
 
@@ -30,6 +31,8 @@ public final class ProjectFrame extends Application {
         primaryStage.setHeight(Screen.getPrimary().getVisualBounds().getHeight());
 
         primaryStage.setResizable(false);
+        primaryStage.setHeight(Toolkit.getDefaultToolkit().getScreenSize().getHeight());
+        primaryStage.setWidth(Toolkit.getDefaultToolkit().getScreenSize().getWidth());
         primaryStage.setFullScreen(true);
 
         primaryStage.setScene(scene);

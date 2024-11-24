@@ -1,6 +1,9 @@
 package me.ib.PersonalProject.simulator;
 
 import com.sun.istack.internal.Nullable;
+import javafx.scene.paint.PhongMaterial;
+import javafx.scene.shape.Sphere;
+import me.ib.PersonalProject.util.Utility;
 
 public class Moon {
     public final Ring[] rings;
@@ -11,6 +14,7 @@ public class Moon {
     public double orbitTime;
     public long timeCreated = 4500000000L;
     private final String name;
+    private final PhongMaterial material = new PhongMaterial();
 
     protected Moon(String name, Ring[] rings, int moonDiameter, long distanceFromPlanet, String dayTime, double orbitTime) {
         this.rings = rings;
@@ -26,5 +30,13 @@ public class Moon {
         this.moonDiameter = moonDiameter;
         this.name = name;
         this.distanceFromPlanet = distanceFromPlanet;
+    }
+
+    public void setObjectTexture(String s) {
+        material.setDiffuseMap(Utility.getResourceAsImage("objectTextures/" + s));
+    }
+
+    public PhongMaterial getMaterial() {
+        return material;
     }
 }

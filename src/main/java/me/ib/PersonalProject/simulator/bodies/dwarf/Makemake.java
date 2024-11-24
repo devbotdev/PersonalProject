@@ -14,6 +14,8 @@ public class Makemake extends Planet {
         setSunlightTravelTime(6, 20, 0);
 
         moons[0] = new Moon("S/2015 (136472) 1, nicknamed MK 2", null, 160, 20900);
+
+        dwarfPlanet();
     }
     @Override
     public Sphere getSphere() {

@@ -1,6 +1,7 @@
 package me.ib.PersonalProject.util;
 
 import javafx.scene.image.Image;
+import javafx.stage.Stage;
 import me.ib.PersonalProject.Main;
 
 import java.util.Objects;
@@ -12,6 +13,16 @@ public abstract class Utility {
     //Should be png icon
     public static Image getResourceAsImage(String fileName) {
         return new Image(Objects.requireNonNull(Main.class.getClassLoader().getResourceAsStream("me.ib/" + fileName)));
+    }
+
+    public static double getStageScale(Stage stage) {
+        return ((stage.getWidth() / 1920) + (stage.getHeight() / 1080)) / 2;
+    }
+    public static double getStageXScale(Stage stage) {
+        return stage.getWidth() / 1920;
+    }
+    public static double getStageYScale(Stage stage) {
+        return stage.getHeight() / 1080;
     }
 
     public static long convertToNum(double i, String s) {

@@ -14,6 +14,9 @@ public class Neptune extends Planet {
 
         setTemperature(0, -235, -210);
 
+        moons[0] = new Moon("Triton", null, 2706, 354800);
+
+        moons[0].setObjectTexture("triton.jpg");
     }
     @Override
     public Sphere getSphere() {

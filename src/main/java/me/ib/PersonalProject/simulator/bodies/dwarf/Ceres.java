@@ -10,9 +10,9 @@ public class Ceres extends Planet {
         super(null, null, Utility.convertToNum(413, "million"),
                 952, 1682, 9 + " hours", 0, "null", sphere);
 
-        dwarfPlanet();
-
         setSunlightTravelTime(0, 22, 0);
+
+        dwarfPlanet();
     }
     @Override
     public Sphere getSphere() {

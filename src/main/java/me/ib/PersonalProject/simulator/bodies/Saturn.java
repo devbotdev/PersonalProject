@@ -15,8 +15,11 @@ public class Saturn extends Planet {
 
         setTemperature(-178);
 
-        moons[0] = new Moon("Titan", null, 0, 0);
-        moons[1] = new Moon("Enceladus", null, 0, 0);
+        moons[0] = new Moon("Titan", null, 5150, 1221850);
+        moons[1] = new Moon("Enceladus", null, 504, 238000);
+
+        moons[0].setObjectTexture("titan.jpg");
+        moons[1].setObjectTexture("enceladus.jpg");
 
         rings[0] = new Ring("D", 0);
         rings[1] = new Ring("C", 0);
