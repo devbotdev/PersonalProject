@@ -39,4 +39,8 @@ public class Moon {
     public PhongMaterial getMaterial() {
         return material;
     }
+
+    public String getName() {
+        return name;
+    }
 }
