@@ -71,13 +71,6 @@ public class Controller {
 
             informationButton.setOnAction(event -> informationPanel.setVisible(!informationPanel.isVisible()));
 
-            informationPanel.setOnScroll(event -> {
-                if (event.getDeltaY() != 0) {
-                    informationPanel.setScrollTop(informationPanel.getScrollTop() - event.getDeltaY() * 3); // Speed multiplier
-                    event.consume(); // Prevent default behavior
-                }
-            });
-
             informationPanel.setText("The smallest planet in the solar system, also the closest to the sun. The sun would appear three times bigger than on earth if you were to look at it from the surface of Mercury, with the amount of sunlight being 7 times greater.\n" +
                     "\n" +
                     "During the day, Mercury reaches temperatures of up to 430°C, because of its lack of atmosphere, at night the temperature can drop to lows like -180°C. On average, Mercury has a temperature of 167 C.\n" +
