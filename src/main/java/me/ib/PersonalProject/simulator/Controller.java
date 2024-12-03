@@ -54,6 +54,14 @@ public class Controller {
                 setMoons();
             });
 
+            /* Run Tests Here
+            stage.fullScreenProperty().addListener((observable, oldValue, newValue) -> {
+                if (!newValue) {
+                    stage.setFullScreen(true);
+                }
+            });
+             */
+
             stage.fullScreenProperty().addListener((observable, oldValue, newValue) -> {
                 if (!newValue) fullscreenButton.setVisible(true);
             });

@@ -35,6 +35,8 @@ public final class ProjectFrame extends Application {
         primaryStage.setWidth(Toolkit.getDefaultToolkit().getScreenSize().getWidth());
         primaryStage.setFullScreen(true);
 
+        primaryStage.setFullScreenExitHint("");
+
         primaryStage.setScene(scene);
         primaryStage.show();
     }
