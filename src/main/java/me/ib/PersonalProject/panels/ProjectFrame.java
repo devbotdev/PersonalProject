@@ -31,10 +31,7 @@ public final class ProjectFrame extends Application {
         primaryStage.setHeight(Screen.getPrimary().getVisualBounds().getHeight());
 
         primaryStage.setResizable(false);
-        primaryStage.setHeight(Toolkit.getDefaultToolkit().getScreenSize().getHeight());
-        primaryStage.setWidth(Toolkit.getDefaultToolkit().getScreenSize().getWidth());
         primaryStage.setFullScreen(true);
-
         primaryStage.setFullScreenExitHint("");
 
         primaryStage.setScene(scene);
