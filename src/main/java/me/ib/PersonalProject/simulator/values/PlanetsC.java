@@ -3,7 +3,6 @@ package me.ib.PersonalProject.simulator.values;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Arc;
 import javafx.scene.shape.ArcType;
-import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Planet;
 
 public class PlanetsC {

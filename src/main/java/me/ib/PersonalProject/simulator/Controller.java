@@ -77,28 +77,10 @@ public class Controller {
             informationButton.setTranslateX((70 * Utility.getStageXScale(stage)) - stage.getWidth() / 2);
             informationButton.setTranslateY((stage.getHeight() / 2) - (35 * Utility.getStageYScale(stage)));
 
-            informationButton.setOnAction(event -> informationPanel.setVisible(!informationPanel.isVisible()));
-
-            informationPanel.setText("The smallest planet in the solar system, also the closest to the sun. The sun would appear three times bigger than on earth if you were to look at it from the surface of Mercury, with the amount of sunlight being 7 times greater.\n" +
-                    "\n" +
-                    "During the day, Mercury reaches temperatures of up to 430°C, because of its lack of atmosphere, at night the temperature can drop to lows like -180°C. On average, Mercury has a temperature of 167 C.\n" +
-                    "\n" +
-                    "Named after the Greek god Mercury.\n" +
-                    "\n" +
-                    "Diameter of 4879 kilometres.\n" +
-                    "\n" +
-                    "Average distance of 57,910,000 kilometres (0.4 astronomical unit) from the sun. Sunlight travels to Mercury in ~3.2 minutes.\n" +
-                    "\n" +
-                    "Heavily eccentric, an egg-shaped planet orbits around the sun from 47 million kilometres away from the sun to 70 million kilometres away from the sun. A year in Mercury is 88 days.\n" +
-                    "\n" +
-                    "Despite its fast years, Mercury spins around on its axis once every 59 Earth days. Because of Mercury’s odd relationship between its orbital period and its rotation around its axis, unlike most planets, one full rotation around its axis does not equal a full day-night cycle. A full day-night cycle in Mercury is equal to 176 Earth days. \n" +
-                    "\n" +
-                    "Mercury does not experience seasons because of its axial tilt being only 0.04 degrees\n" +
-                    "\n" +
-                    "Mercury has no moons and no rings. Formed around 4.5 billion years ago.\n" +
-                    "\n" +
-                    "It’s mass is around 3.30 x 1023 kg\n" +
-                    "\n");
+            informationButton.setOnAction(event -> {
+                informationPanel.setText(Utility.extractText(focusedPlanetId));
+                informationPanel.setVisible(!informationPanel.isVisible());
+            });
         });
 
         hoveredPlanetName.setVisible(true);

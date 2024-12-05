@@ -10,7 +10,6 @@ import me.ib.PersonalProject.Main;
 import me.ib.PersonalProject.util.State;
 import me.ib.PersonalProject.util.Utility;
 
-import java.awt.*;
 import java.util.Objects;
 
 public final class ProjectFrame extends Application {

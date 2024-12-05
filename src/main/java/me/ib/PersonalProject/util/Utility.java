@@ -4,15 +4,44 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import me.ib.PersonalProject.Main;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Objects;
 
 public abstract class Utility {
     public static State state;
     public static final String optionsIcon = "optionsIcon.png";
     public final static String directory = "me.ib/";
+
     //Should be png icon
     public static Image getResourceAsImage(String fileName) {
         return new Image(Objects.requireNonNull(Main.class.getClassLoader().getResourceAsStream("me.ib/" + fileName)));
+    }
+
+    public static String extractText(String id) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(Objects.requireNonNull(Main.class.getClassLoader().getResourceAsStream("me.ib/info.txt"))))) {
+            String line;
+            boolean isTargetId = false;
+            StringBuilder result = new StringBuilder();
+
+            while ((line = reader.readLine()) != null) {
+                line = line.trim();
+
+                if (line.startsWith("Id:")) {
+                    if (line.equals("Id: " + id)) {
+                        isTargetId = true;
+                    } else if (isTargetId) {
+                        break;
+                    }
+                } else if (isTargetId) {
+                    result.append(line).append("\n");
+                }
+            }
+            return isTargetId ? result.toString().trim() : null;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static double getStageScale(Stage stage) {
