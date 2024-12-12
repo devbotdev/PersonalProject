@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
@@ -22,6 +21,8 @@ import me.ib.PersonalProject.simulator.values.PlanetsC;
 import me.ib.PersonalProject.util.Utility;
 
 import java.awt.*;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Objects;
 
 public class Controller {
@@ -73,9 +74,6 @@ public class Controller {
             backButtonFocused.setOnAction(event -> backButtonFocusedPressed());
 
             hoveredPlanetName.setTranslateY(hoveredPlanetName.getLayoutBounds().getHeight());
-
-            informationButton.setTranslateX((70 * Utility.getStageXScale(stage)) - stage.getWidth() / 2);
-            informationButton.setTranslateY((stage.getHeight() / 2) - (35 * Utility.getStageYScale(stage)));
 
             informationButton.setOnAction(event -> {
                 informationPanel.setText(Utility.extractText(focusedPlanetId));
@@ -161,18 +159,24 @@ public class Controller {
         Planet pl = getPlanetFromName(focusedPlanetId);
         assert pl != null;
 
+        byte i = 0;
+
         focusedPlanetBack = focusedPlanetId;
 
         if (sphere == moon)
-            focusedPlanetId = pl.moons[0].getName();
+            focusedPlanetId = pl.moons[i++].getName();
         else if (sphere == moon1)
-            focusedPlanetId = pl.moons[1].getName();
+            focusedPlanetId = pl.moons[i++].getName();
         else if (sphere == moon2)
-            focusedPlanetId = pl.moons[2].getName();
+            focusedPlanetId = pl.moons[i++].getName();
         else if (sphere == moon3)
-            focusedPlanetId = pl.moons[3].getName();
+            focusedPlanetId = pl.moons[i++].getName();
 
-        updateHoveredPlanetName();
+        i--;
+
+        updateHoveredPlanetName(focusedPlanetId);
+
+        stats.setText(getMoonText(pl.moons[i]));
 
         focusedPlanet.setMaterial(sphere.getMaterial());
 
@@ -182,13 +186,85 @@ public class Controller {
         moon3.setVisible(false);
     }
 
+    private String getMoonText(Moon moon) {
+        String s = "";
+        if (moon.rings != null) s += "Rings: " + moon.rings.length + "\n";
+        if (moon.getMoonDiameter() != 0)
+            s += "Diameter: " + Utility.formatWithCommas(moon.getMoonDiameter()) + "km" + "\n";
+        if (moon.getDistanceFromPlanet() != 0)
+            s += "Distance From the Planet: " + Utility.formatWithCommas(moon.getDistanceFromPlanet()) + "km" + "\n";
+        if (moon.orbitTime != 0) s += "Orbit Time: " + moon.orbitTime + " days" + "\n";
+        if (moon.getDayTime() != null) s += "Day Time: " + moon.getDayTime() + "\n";
+        if (moon.TEMPERATURE_AVG != 0) s += "Average Temperature: " + moon.TEMPERATURE_AVG + "°C" + "\n";
+        if (moon.TEMPERATURE_MAX != 0) s += "Max Temperature: " + moon.TEMPERATURE_MAX + "°C" + "\n";
+        if (moon.TEMPERATURE_MIN != 0) s += "Min Temperature: " + moon.TEMPERATURE_MIN + "°C" + "\n";
+        if (moon.timeCreated != 4500000000L)
+            s += "Time Created: " + Utility.formatWithCommas(moon.timeCreated) + " years ago" + "\n";
+
+        return s.substring(0, s.length() - 1);
+    }
+
+    private int getMoonsAmount() {
+        if (Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).moons == null) return 0;
+        return Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).moons.length;
+    }
+
+    private int getRingsAmount() {
+        if (Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).rings == null) return 0;
+        return Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).rings.length;
+    }
+
+    private String getOrbitTime() {
+        if (Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getOrbitTime() != 0)
+            return Utility.formatWithCommas((long) Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getOrbitTime()) + " days";
+        else if (Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getOrbitString() != null)
+            return Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getOrbitString();
+        else return null;
+    }
+
     private void planetClicked(Planet planet) {
         focusedPlanetId = planet.getSphere().getId().substring(0, 1).toUpperCase() + planet.getSphere().getId().substring(1);
+
+        String s = "Moons: " + getMoonsAmount() + "\n";
+
+        if (planet.rings != null) {
+            if (planet.rings[0] != null) {
+                s += "Rings: " + getRingsAmount() + " (";
+                for (Ring r : planet.rings) {
+                    if (r.getName() == null) break;
+                    s += r.getName() + ", ";
+                }
+                s = s.substring(0, s.length() - 2) + ")\n";
+            } else {
+                s += "Rings: " + getRingsAmount() + "\n";
+            }
+        } else s += "Rings: 0\n";
+
+        s += "Distance From the Sun: " + Utility.formatWithCommas(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getDistanceFromTheSun()) + "km" + "\n" +
+                "Diameter: " + Utility.formatWithCommas(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getPlanetDiameter()) + "km" + "\n" +
+                "Orbit Time: " + getOrbitTime() + "\n" +
+                "Day Time: " + Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getDayTime() + "\n" +
+                "Axis of Rotation Tilt: " + Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).axisOfRotationTilt + "°C" + "\n" +
+                "Time Created: " + Utility.formatWithCommas(planet.timeCreated) + " years ago" + "\n";
+
+        if (!planet.mass.equals("null kg") && !planet.mass.equals(" kg"))
+            s += "Mass: " + Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).mass + "\n";
+        if (planet.getSunlightTravelTime() != null)
+            s += "Sunlight Travel Time: " + planet.getSunlightTravelTime() + "\n";
+        if (planet.getAvgTemperature() != 0)
+            s += "Average Temperature: " + Utility.formatWithCommas(planet.getAvgTemperature()) + "°C" + "\n";
+        if (planet.getMaxTemperature() != 0)
+            s += "Max Temperature: " + Utility.formatWithCommas(planet.getMaxTemperature()) + "°C" + "\n";
+        if (planet.getMinTemperature() != 0)
+            s += "Min Temperature: " + Utility.formatWithCommas(planet.getMinTemperature()) + "°C" + "\n";
+
+        stats.setText(s.substring(0, s.length() - 1));
 
         overallView.setVisible(false);
         focusedView.setVisible(true);
 
         focusedPlanet.setMaterial(planet.getSphere().getMaterial());
+
         updateHoveredPlanetName();
 
         if (planet.moons == null) {
@@ -481,6 +557,8 @@ public class Controller {
     protected TextArea informationPanel;
     @FXML
     protected BorderPane overallView, focusedView;
+    @FXML
+    protected Text stats;
 
     public void setFullscreen() {
         stage.setHeight(Toolkit.getDefaultToolkit().getScreenSize().getHeight());
@@ -530,7 +608,11 @@ public class Controller {
     }
 
     public void updateHoveredPlanetName() {
-        hoveredPlanetName.setText(focusedPlanetId);
+        try {
+            if (!Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).isDwarf())
+                hoveredPlanetName.setText(focusedPlanetId);
+            else hoveredPlanetName.setText("Dwarf Planet: " + focusedPlanetId);
+        } catch (NullPointerException ignored) {}
     }
 
     protected void unshine(Sphere sphere) {

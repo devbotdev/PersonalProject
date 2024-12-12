@@ -17,6 +17,16 @@ public class Neptune extends Planet {
         moons[0] = new Moon("Triton", null, 2706, 354800);
 
         moons[0].setObjectTexture("triton.jpg");
+
+        rings[0] = new Ring("Galle");
+        rings[1] = new Ring("Leverrier");
+        rings[2] = new Ring("Lassell");
+        rings[3] = new Ring("Arago");
+        rings[4] = new Ring("Adams");
+        rings[5] = new Ring("Courage");
+        rings[6] = new Ring("Liberté");
+        rings[7] = new Ring("Egalité");
+        rings[8] = new Ring("Fraternité");
     }
     @Override
     public Sphere getSphere() {

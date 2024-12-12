@@ -22,7 +22,6 @@ public class Earth extends Planet {
 
     @Override
     public void initializePlanet(Sphere sphere) {
-
     }
 
     @Override

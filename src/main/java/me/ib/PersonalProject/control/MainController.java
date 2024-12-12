@@ -79,7 +79,6 @@ public final class MainController {
             stage.setScene(scene);
             stage.setTitle("Simulator");
 
-            stage.getIcons().add(Utility.getResourceAsImage(Utility.optionsIcon));
             stage.setFullScreen(true);
 
             stage.show();

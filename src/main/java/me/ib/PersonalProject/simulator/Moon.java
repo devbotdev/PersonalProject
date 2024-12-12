@@ -6,6 +6,7 @@ import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.util.Utility;
 
 public class Moon {
+
     public final Ring[] rings;
     private final int moonDiameter;
     private final long distanceFromPlanet;
@@ -42,5 +43,17 @@ public class Moon {
 
     public String getName() {
         return name;
+    }
+
+    public int getMoonDiameter() {
+        return moonDiameter;
+    }
+
+    public long getDistanceFromPlanet() {
+        return distanceFromPlanet;
+    }
+
+    public String getDayTime() {
+        return dayTime;
     }
 }

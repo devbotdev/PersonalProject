@@ -33,6 +33,8 @@ public final class ProjectFrame extends Application {
         primaryStage.setFullScreen(true);
         primaryStage.setFullScreenExitHint("");
 
+        primaryStage.getIcons().add(Utility.getResourceAsImage(Utility.optionsIcon));
+
         primaryStage.setScene(scene);
         primaryStage.show();
     }

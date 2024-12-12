@@ -10,6 +10,7 @@ public class Sun extends Planet {
                 1391000, "230 million years", 25 + " days at the equator, " + 36 + " days at the poles", 7.25, "2 × 10^30", sphere);
 
         setTemperature(15000000, 5500, 2000000);
+        setSun();
     }
     @Override
     public Sphere getSphere() {

@@ -1,5 +1,5 @@
 #label-title {
-    -fx-font-size: 150;
+    -fx-font-size: 110;
     -fx-text-alignment: center;
     -fx-font-family: "Montserrat";
     -fx-font-weight: bold;
@@ -139,4 +139,29 @@
 .text-area .scroll-bar:vertical .increment-button:pressed,
 .text-area .scroll-bar:vertical .decrement-button:pressed {
     -fx-background-color: #4a9bcf;
+}
+
+#inButton {
+    -fx-background-color: transparent;
+    -fx-border-color: #4e89ae;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: #d9e4ec;
+    -fx-font-size: 40px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-padding: 20 20;
+    -fx-cursor: hand;
+}
+
+#inButton:hover {
+    -fx-background-color: rgba(36, 59, 85, 0.3);
+    -fx-border-color: #a0d2eb;
+    -fx-text-fill: #a0d2eb;
+}
+
+#stats {
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 16px;
+    -fx-font-family: "Verdana";
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.3), 5, 0.5, 0, 0);
+    -fx-padding: 10;
 }

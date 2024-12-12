@@ -12,13 +12,8 @@ package me.ib.PersonalProject.simulator;
  */
 
 import com.sun.istack.internal.Nullable;
-import javafx.scene.paint.Color;
-import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.util.Utility;
-
-import java.time.LocalTime;
-import java.util.Objects;
 
 public abstract class Planet extends Controller {
     private boolean isDwarf = false;
@@ -130,6 +125,8 @@ public abstract class Planet extends Controller {
     }
 
     public String getSunlightTravelTime() {
+        if (sunlightTravelTimeHours == 0 && sunlightTravelTimeMinutes == 0 && sunlightTravelTimeSeconds == 0) return null;
+
         if (sunlightTravelTimeHours == 0) {
             if (sunlightTravelTimeSeconds == 0) return sunlightTravelTimeMinutes + " minutes";
             return sunlightTravelTimeMinutes + " minutes and " + sunlightTravelTimeSeconds + " seconds";
@@ -170,16 +167,16 @@ public abstract class Planet extends Controller {
         return isDwarf;
     }
 
-    public double getMaxTemperature() {
-        return TEMPERATURE_MAX;
+    public long getMaxTemperature() {
+        return (long) TEMPERATURE_MAX;
     }
 
-    public double getMinTemperature() {
-        return TEMPERATURE_MIN;
+    public long getMinTemperature() {
+        return (long) TEMPERATURE_MIN;
     }
 
-    public double getAvgTemperature() {
-        return TEMPERATURE_AVG;
+    public long getAvgTemperature() {
+        return (long) TEMPERATURE_AVG;
     }
 
     public boolean isSun() {
