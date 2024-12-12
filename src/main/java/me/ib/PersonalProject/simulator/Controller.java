@@ -21,8 +21,6 @@ import me.ib.PersonalProject.simulator.values.PlanetsC;
 import me.ib.PersonalProject.util.Utility;
 
 import java.awt.*;
-import java.text.NumberFormat;
-import java.util.Locale;
 import java.util.Objects;
 
 public class Controller {
@@ -225,38 +223,33 @@ public class Controller {
     private void planetClicked(Planet planet) {
         focusedPlanetId = planet.getSphere().getId().substring(0, 1).toUpperCase() + planet.getSphere().getId().substring(1);
 
-        String s = "Moons: " + getMoonsAmount() + "\n";
+        StringBuilder s = new StringBuilder("Moons: " + getMoonsAmount() + "\n");
 
         if (planet.rings != null) {
             if (planet.rings[0] != null) {
-                s += "Rings: " + getRingsAmount() + " (";
+                s.append("Rings: ").append(getRingsAmount()).append(" (");
                 for (Ring r : planet.rings) {
                     if (r.getName() == null) break;
-                    s += r.getName() + ", ";
+                    s.append(r.getName()).append(", ");
                 }
-                s = s.substring(0, s.length() - 2) + ")\n";
+                s = new StringBuilder(s.substring(0, s.length() - 2) + ")\n");
             } else {
-                s += "Rings: " + getRingsAmount() + "\n";
+                s.append("Rings: ").append(getRingsAmount()).append("\n");
             }
-        } else s += "Rings: 0\n";
+        } else s.append("Rings: 0\n");
 
-        s += "Distance From the Sun: " + Utility.formatWithCommas(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getDistanceFromTheSun()) + "km" + "\n" +
-                "Diameter: " + Utility.formatWithCommas(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getPlanetDiameter()) + "km" + "\n" +
-                "Orbit Time: " + getOrbitTime() + "\n" +
-                "Day Time: " + Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getDayTime() + "\n" +
-                "Axis of Rotation Tilt: " + Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).axisOfRotationTilt + "°C" + "\n" +
-                "Time Created: " + Utility.formatWithCommas(planet.timeCreated) + " years ago" + "\n";
+        s.append("Distance From the Sun: ").append(Utility.formatWithCommas(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getDistanceFromTheSun())).append("km").append("\n").append("Diameter: ").append(Utility.formatWithCommas(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getPlanetDiameter())).append("km").append("\n").append("Orbit Time: ").append(getOrbitTime()).append("\n").append("Day Time: ").append(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).getDayTime()).append("\n").append("Axis of Rotation Tilt: ").append(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).axisOfRotationTilt).append("°C").append("\n").append("Time Created: ").append(Utility.formatWithCommas(planet.timeCreated)).append(" years ago").append("\n");
 
         if (!planet.mass.equals("null kg") && !planet.mass.equals(" kg"))
-            s += "Mass: " + Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).mass + "\n";
+            s.append("Mass: ").append(Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).mass).append("\n");
         if (planet.getSunlightTravelTime() != null)
-            s += "Sunlight Travel Time: " + planet.getSunlightTravelTime() + "\n";
+            s.append("Sunlight Travel Time: ").append(planet.getSunlightTravelTime()).append("\n");
         if (planet.getAvgTemperature() != 0)
-            s += "Average Temperature: " + Utility.formatWithCommas(planet.getAvgTemperature()) + "°C" + "\n";
+            s.append("Average Temperature: ").append(Utility.formatWithCommas(planet.getAvgTemperature())).append("°C").append("\n");
         if (planet.getMaxTemperature() != 0)
-            s += "Max Temperature: " + Utility.formatWithCommas(planet.getMaxTemperature()) + "°C" + "\n";
+            s.append("Max Temperature: ").append(Utility.formatWithCommas(planet.getMaxTemperature())).append("°C").append("\n");
         if (planet.getMinTemperature() != 0)
-            s += "Min Temperature: " + Utility.formatWithCommas(planet.getMinTemperature()) + "°C" + "\n";
+            s.append("Min Temperature: ").append(Utility.formatWithCommas(planet.getMinTemperature())).append("°C").append("\n");
 
         stats.setText(s.substring(0, s.length() - 1));
 

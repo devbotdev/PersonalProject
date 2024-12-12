@@ -1,8 +1,6 @@
 package me.ib.PersonalProject.simulator;
 
-import com.sun.istack.internal.Nullable;
 import javafx.scene.paint.PhongMaterial;
-import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.util.Utility;
 
 public class Moon {

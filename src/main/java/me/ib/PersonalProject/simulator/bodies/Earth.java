@@ -1,6 +1,5 @@
 package me.ib.PersonalProject.simulator.bodies;
 
-import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.simulator.Moon;
 import me.ib.PersonalProject.simulator.Planet;
