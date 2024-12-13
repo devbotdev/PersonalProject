@@ -8,23 +8,20 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.PersonalProject.control.TitleOptionsController">
-   <children>
-      <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0" />
-      <BorderPane prefHeight="200.0" prefWidth="200.0">
-         <center>
-            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Pane prefHeight="200.0" prefWidth="200.0" />
-                  <VBox prefHeight="540.0" prefWidth="191.0">
-                     <children>
-                        <Pane prefHeight="200.0" prefWidth="200.0" />
-                        <Label id="options-titles" stylesheets="@stylesheet.css" text="Music Volume" textAlignment="CENTER" />
-                        <Slider fx:id="slider" blockIncrement="3.0" max="0.0" min="-80.0" prefHeight="43.0" prefWidth="201.0" stylesheets="@stylesheet.css" />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-         </center></BorderPane>
-   </children>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0"
+           prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="me.ib.PersonalProject.control.TitleOptionsController">
+   <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0"/>
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <center>
+         <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER" prefWidth="220.0">
+               <Label id="options-titles" stylesheets="@stylesheet.css" text="Music Volume"
+                      textAlignment="CENTER"/>
+               <Slider fx:id="slider" blockIncrement="3.0" max="0.0" min="-80.0" prefHeight="43.0"
+                       prefWidth="201.0" stylesheets="@stylesheet.css"/>
+            </VBox>
+         </HBox>
+      </center>
+   </BorderPane>
 </StackPane>
