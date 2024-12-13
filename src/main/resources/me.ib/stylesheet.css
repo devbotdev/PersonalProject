@@ -87,7 +87,6 @@
 }
 
 .text-area {
-    -fx-font-family: "Arial";
     -fx-background-color: rgba(25, 25, 25, 0.5);
     -fx-border-color: rgba(255, 255, 255, 0.8);
     -fx-border-radius: 15;
