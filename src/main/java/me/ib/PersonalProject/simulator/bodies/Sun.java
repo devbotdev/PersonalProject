@@ -12,10 +12,12 @@ public class Sun extends Planet {
         setTemperature(15000000, 5500, 2000000);
         setSun();
     }
+
     @Override
     public Sphere getSphere() {
         return sphere;
     }
+
     @Override
     public void initializePlanet(Sphere sphere) {
     }

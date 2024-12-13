@@ -15,6 +15,7 @@ public class Eris extends Planet {
 
         dwarfPlanet();
     }
+
     @Override
     public Sphere getSphere() {
         return sphere;

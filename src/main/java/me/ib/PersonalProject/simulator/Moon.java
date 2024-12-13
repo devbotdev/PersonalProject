@@ -8,12 +8,12 @@ public class Moon {
     public final Ring[] rings;
     private final int moonDiameter;
     private final long distanceFromPlanet;
-    private String dayTime;
+    private final String name;
+    private final PhongMaterial material = new PhongMaterial();
     public int TEMPERATURE_MAX, TEMPERATURE_MIN, TEMPERATURE_AVG;
     public double orbitTime;
     public long timeCreated = 4500000000L;
-    private final String name;
-    private final PhongMaterial material = new PhongMaterial();
+    private String dayTime;
 
     protected Moon(String name, Ring[] rings, int moonDiameter, long distanceFromPlanet, String dayTime, double orbitTime) {
         this.rings = rings;

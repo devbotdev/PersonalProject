@@ -1,7 +1,6 @@
 package me.ib.PersonalProject.simulator;
 
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
@@ -11,7 +10,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
-import javafx.scene.shape.*;
+import javafx.scene.shape.Arc;
+import javafx.scene.shape.Sphere;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import me.ib.PersonalProject.control.StarryBackground;
@@ -26,15 +26,121 @@ import java.util.Objects;
 public class Controller {
 
     public final PhongMaterial material = new PhongMaterial();
+    private final PlanetsC planetsC = new PlanetsC();
+    @FXML
+    public Pane bgPane;
+    @FXML
+    public Group planetsGroup;
+    public String focusedPlanetId, moonId, moon1Id, moon2Id, moon3Id, focusedPlanetBack;
+    @FXML
+    protected Sphere glowSphere;
+    @FXML
+    protected Sphere sunShine;
+    @FXML
+    protected Sphere sun;
+    @FXML
+    protected Sphere mercury;
+    @FXML
+    protected Sphere venus;
+    @FXML
+    protected Sphere earth;
+    @FXML
+    protected Sphere mars;
+    @FXML
+    protected Sphere jupiter;
+    @FXML
+    protected Sphere ceres;
+    @FXML
+    protected Sphere saturn;
+    @FXML
+    protected Sphere uranus;
+    @FXML
+    protected Sphere neptune;
+    @FXML
+    protected Sphere pluto;
+    @FXML
+    protected Sphere haumea;
+    @FXML
+    protected Sphere makemake;
+    @FXML
+    protected Sphere eris;
+    @FXML
+    protected Sphere focusedPlanet, moon, moon1, moon2, moon3;
+    @FXML
+    protected Text hoveredPlanetName;
+    @FXML
+    protected Arc mercuryOrbit;
+    @FXML
+    protected Arc venusOrbit;
+    @FXML
+    protected Arc earthOrbit;
+    @FXML
+    protected Arc marsOrbit;
+    @FXML
+    protected Arc ceresOrbit;
+    @FXML
+    protected Arc jupiterOrbit;
+    @FXML
+    protected Arc saturnOrbit;
+    @FXML
+    protected Arc uranusOrbit;
+    @FXML
+    protected Arc neptuneOrbit;
+    @FXML
+    protected Arc plutoOrbit;
+    @FXML
+    protected Arc haumeaOrbit;
+    @FXML
+    protected Arc makemakeOrbit;
+    @FXML
+    protected Arc erisOrbit;
+    @FXML
+    protected Arc mercuryOrbit1;
+    @FXML
+    protected Arc venusOrbit1;
+    @FXML
+    protected Arc earthOrbit1;
+    @FXML
+    protected Arc marsOrbit1;
+    @FXML
+    protected Arc ceresOrbit1;
+    @FXML
+    protected Arc jupiterOrbit1;
+    @FXML
+    protected Arc saturnOrbit1;
+    @FXML
+    protected Arc uranusOrbit1;
+    @FXML
+    protected Arc neptuneOrbit1;
+    @FXML
+    protected Arc plutoOrbit1;
+    @FXML
+    protected Arc haumeaOrbit1;
+    @FXML
+    protected Arc makemakeOrbit1;
+    @FXML
+    protected Arc erisOrbit1;
+    @FXML
+    protected CheckBox orbitCheckBox;
+    @FXML
+    protected Button fullscreenButton, backButtonFocused, informationButton;
+    @FXML
+    protected TextArea informationPanel;
+    @FXML
+    protected BorderPane overallView, focusedView;
+    @FXML
+    protected Text stats;
     private PhongMaterial glowMaterial;
     private Stage stage;
     private Planet sun0, mercury0, venus0, earth0, mars0, ceres0, jupiter0, saturn0, uranus0, neptune0, pluto0, haumea0, makemake0, eris0;
-    private final PlanetsC planetsC = new PlanetsC();
     private boolean isFocusedOnMoon;
+    private int a;
+    private int ofs = 0;
+    private int planet1 = 0;
 
     @FXML
     public void initialize() {
-        new StarryBackground(bgPane, 400, 150, 50, 95);
+        new StarryBackground(bgPane, 95);
 
         initializePlanets();
 
@@ -53,21 +159,13 @@ public class Controller {
                 setMoons();
             });
 
-            /* Run Tests Here
-            stage.fullScreenProperty().addListener((observable, oldValue, newValue) -> {
-                if (!newValue) {
-                    stage.setFullScreen(true);
-                }
-            });
-             */
-
             stage.fullScreenProperty().addListener((observable, oldValue, newValue) -> {
                 if (!newValue) fullscreenButton.setVisible(true);
             });
 
             fullscreenButton.setVisible(false);
 
-            orbitCheckBox.setOnAction(this::toggleOrbit);
+            orbitCheckBox.setOnAction(e -> toggleOrbit());
             fullscreenButton.setOnAction(event -> setFullscreen());
             backButtonFocused.setOnAction(event -> backButtonFocusedPressed());
 
@@ -368,10 +466,6 @@ public class Controller {
         updateOrbit(erisOrbit, erisOrbit1, eris0);
     }
 
-    private int a;
-    private int ofs = 0;
-    private int planet1 = 0;
-
     private void updateOrbit(Arc topOrbit, Arc bottomOrbit, Planet planet) {
         double radiusX = Math.abs(sun.getLayoutX() - planet.getSphere().getLayoutX() + planet.getSphere().getRadius());
         topOrbit.setRadiusX(radiusX);
@@ -450,109 +544,6 @@ public class Controller {
         setActions(moon3);
     }
 
-    @FXML
-    protected Sphere glowSphere;
-    @FXML
-    protected Sphere sunShine;
-    @FXML
-    public Pane bgPane;
-    @FXML
-    public Group planetsGroup;
-    @FXML
-    protected Sphere sun;
-    @FXML
-    protected Sphere mercury;
-    @FXML
-    protected Sphere venus;
-    @FXML
-    protected Sphere earth;
-    @FXML
-    protected Sphere mars;
-    @FXML
-    protected Sphere jupiter;
-    @FXML
-    protected Sphere ceres;
-    @FXML
-    protected Sphere saturn;
-    @FXML
-    protected Sphere uranus;
-    @FXML
-    protected Sphere neptune;
-    @FXML
-    protected Sphere pluto;
-    @FXML
-    protected Sphere haumea;
-    @FXML
-    protected Sphere makemake;
-    @FXML
-    protected Sphere eris;
-    @FXML
-    protected Sphere focusedPlanet, moon, moon1, moon2, moon3;
-    @FXML
-    protected Text hoveredPlanetName;
-    @FXML
-    protected Arc mercuryOrbit;
-    @FXML
-    protected Arc venusOrbit;
-    @FXML
-    protected Arc earthOrbit;
-    @FXML
-    protected Arc marsOrbit;
-    @FXML
-    protected Arc ceresOrbit;
-    @FXML
-    protected Arc jupiterOrbit;
-    @FXML
-    protected Arc saturnOrbit;
-    @FXML
-    protected Arc uranusOrbit;
-    @FXML
-    protected Arc neptuneOrbit;
-    @FXML
-    protected Arc plutoOrbit;
-    @FXML
-    protected Arc haumeaOrbit;
-    @FXML
-    protected Arc makemakeOrbit;
-    @FXML
-    protected Arc erisOrbit;
-    @FXML
-    protected Arc mercuryOrbit1;
-    @FXML
-    protected Arc venusOrbit1;
-    @FXML
-    protected Arc earthOrbit1;
-    @FXML
-    protected Arc marsOrbit1;
-    @FXML
-    protected Arc ceresOrbit1;
-    @FXML
-    protected Arc jupiterOrbit1;
-    @FXML
-    protected Arc saturnOrbit1;
-    @FXML
-    protected Arc uranusOrbit1;
-    @FXML
-    protected Arc neptuneOrbit1;
-    @FXML
-    protected Arc plutoOrbit1;
-    @FXML
-    protected Arc haumeaOrbit1;
-    @FXML
-    protected Arc makemakeOrbit1;
-    @FXML
-    protected Arc erisOrbit1;
-    @FXML
-    protected CheckBox orbitCheckBox;
-    @FXML
-    protected Button fullscreenButton, backButtonFocused, informationButton;
-    @FXML
-    protected TextArea informationPanel;
-    @FXML
-    protected BorderPane overallView, focusedView;
-    @FXML
-    protected Text stats;
-
     public void setFullscreen() {
         stage.setHeight(Toolkit.getDefaultToolkit().getScreenSize().getHeight());
         stage.setWidth(Toolkit.getDefaultToolkit().getScreenSize().getWidth());
@@ -594,8 +585,6 @@ public class Controller {
         return Objects.equals(sphere.getId(), moon.getId()) || Objects.equals(sphere.getId(), moon1.getId()) || Objects.equals(sphere.getId(), moon2.getId()) || Objects.equals(sphere.getId(), moon3.getId());
     }
 
-    public String focusedPlanetId, moonId, moon1Id, moon2Id, moon3Id, focusedPlanetBack;
-
     public void updateHoveredPlanetName(String planetName) {
         hoveredPlanetName.setText(planetName);
     }
@@ -605,7 +594,8 @@ public class Controller {
             if (!Objects.requireNonNull(getPlanetFromName(focusedPlanetId)).isDwarf())
                 hoveredPlanetName.setText(focusedPlanetId);
             else hoveredPlanetName.setText("Dwarf Planet: " + focusedPlanetId);
-        } catch (NullPointerException ignored) {}
+        } catch (NullPointerException ignored) {
+        }
     }
 
     protected void unshine(Sphere sphere) {
@@ -622,7 +612,7 @@ public class Controller {
         }
     }
 
-    private void toggleOrbit(ActionEvent e) {
+    private void toggleOrbit() {
         if (orbitCheckBox.isSelected()) {
             mercuryOrbit.setVisible(true);
             venusOrbit.setVisible(true);

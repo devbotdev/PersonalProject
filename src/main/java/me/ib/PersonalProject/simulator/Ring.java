@@ -1,8 +1,9 @@
 package me.ib.PersonalProject.simulator;
 
 public class Ring {
-    private long distanceFromPlanet;
     private final String name;
+    private long distanceFromPlanet;
+
     public Ring(String name, long distanceFromPlanet) {
         this.distanceFromPlanet = distanceFromPlanet;
         this.name = name;

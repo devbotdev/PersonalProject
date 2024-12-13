@@ -13,12 +13,12 @@ public class Jupiter extends Planet {
                 139822, 4333, 10.5 + " hours", 3, "1.9 × 10^27", sphere);
 
         moons[0] = new Moon("Ganymede", null, 5262, 1070400);
-        moons[1] = new Moon("Callisto", null,4821,1882700);
-        moons[2] = new Moon("Io", null,3643, 421800 );
-        moons[3] = new Moon("Europa", null,3122,671100);
+        moons[1] = new Moon("Callisto", null, 4821, 1882700);
+        moons[2] = new Moon("Io", null, 3643, 421800);
+        moons[3] = new Moon("Europa", null, 3122, 671100);
 
         moons[0].setObjectTexture("ganymede.jpg");
-        moons[1].setObjectTexture("Callisto.jpg");
+        moons[1].setObjectTexture("callisto.jpg");
         moons[2].setObjectTexture("io.jpg");
         moons[3].setObjectTexture("europa.jpg");
 

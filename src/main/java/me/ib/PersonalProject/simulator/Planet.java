@@ -11,34 +11,26 @@ package me.ib.PersonalProject.simulator;
     }
  */
 
-import com.sun.istack.internal.Nullable;
 import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.util.Utility;
 
 public abstract class Planet extends Controller {
-    private boolean isDwarf = false;
-    private boolean isSun = false;
     public final Moon[] moons;
     public final Ring[] rings;
+    public final double axisOfRotationTilt, orbitTime;
+    public final String mass;
+    protected final Sphere sphere;
     private final int planetDiameter;
     private final String orbitString;
     private final long distanceFromTheSun;
     private final String dayTime;
+    public long timeCreated = 4500000000L;
+    private boolean isDwarf = false;
+    private boolean isSun = false;
     private double TEMPERATURE_MAX, TEMPERATURE_MIN, TEMPERATURE_AVG;
     private int sunlightTravelTimeHours, sunlightTravelTimeMinutes, sunlightTravelTimeSeconds;
-    public final double axisOfRotationTilt, orbitTime;
-    public long timeCreated = 4500000000L;
-    public final String mass;
-    protected final Sphere sphere;
 
-    public abstract void initializePlanet(Sphere sphere);
-    public void actionEvent() {
-    }
-    public void setObjectTexture(Sphere sphere, String s) {
-        material.setDiffuseMap(Utility.getResourceAsImage("objectTextures/" + s));
-        sphere.setMaterial(material);
-    }
-    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, String orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass, Sphere sphere) {
+    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, String orbitTime, String dayTime, double axisOfRotationTilt, String mass, Sphere sphere) {
         this.moons = moons;
         this.rings = rings;
         this.distanceFromTheSun = distanceFromTheSun;
@@ -55,7 +47,8 @@ public abstract class Planet extends Controller {
 
         setObjectTexture(sphere, sphere.getId().toLowerCase() + ".jpg");
     }
-    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, double orbitTime, String dayTime, double axisOfRotationTilt, @Nullable String mass, Sphere sphere) {
+
+    protected Planet(Moon[] moons, Ring[] rings, long distanceFromTheSun, int planetDiameter, double orbitTime, String dayTime, double axisOfRotationTilt, String mass, Sphere sphere) {
         this.moons = moons;
         this.rings = rings;
         this.distanceFromTheSun = distanceFromTheSun;
@@ -72,6 +65,16 @@ public abstract class Planet extends Controller {
         setObjectTexture(sphere, sphere.getId().toLowerCase() + ".jpg");
     }
 
+    public abstract void initializePlanet(Sphere sphere);
+
+    public void actionEvent() {
+    }
+
+    public void setObjectTexture(Sphere sphere, String s) {
+        material.setDiffuseMap(Utility.getResourceAsImage("objectTextures/" + s));
+        sphere.setMaterial(material);
+    }
+
     public void setTemperature(double max, double min, double avg) {
         if (max != 0)
             this.TEMPERATURE_MAX = max;
@@ -80,6 +83,7 @@ public abstract class Planet extends Controller {
         if (avg != 0)
             this.TEMPERATURE_AVG = avg;
     }
+
     public void setTemperature(double max, double min) {
         if (max != 0)
             this.TEMPERATURE_MAX = max;
@@ -125,7 +129,8 @@ public abstract class Planet extends Controller {
     }
 
     public String getSunlightTravelTime() {
-        if (sunlightTravelTimeHours == 0 && sunlightTravelTimeMinutes == 0 && sunlightTravelTimeSeconds == 0) return null;
+        if (sunlightTravelTimeHours == 0 && sunlightTravelTimeMinutes == 0 && sunlightTravelTimeSeconds == 0)
+            return null;
 
         if (sunlightTravelTimeHours == 0) {
             if (sunlightTravelTimeSeconds == 0) return sunlightTravelTimeMinutes + " minutes";
@@ -186,8 +191,10 @@ public abstract class Planet extends Controller {
     public void setSun() {
         isSun = true;
     }
+
     public String getOrbitString() {
         return orbitString;
     }
+
     public abstract Sphere getSphere();
 }

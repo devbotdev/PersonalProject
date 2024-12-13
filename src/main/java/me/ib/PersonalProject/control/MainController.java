@@ -8,7 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.*;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import me.ib.PersonalProject.Main;
@@ -32,7 +35,7 @@ public final class MainController {
     public Button launchButton, optionsButton, exitButton;
     @FXML
     public StackPane stackPane;
-    
+
     @FXML
     public void initialize() {
         new StarryBackground(bgPane);
@@ -82,6 +85,7 @@ public final class MainController {
             stage.setFullScreen(true);
 
             stage.show();
+
         } catch (IOException ioException) {
             throw new RuntimeException(ioException);
         }

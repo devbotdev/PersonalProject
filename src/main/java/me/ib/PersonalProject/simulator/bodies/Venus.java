@@ -13,10 +13,12 @@ public class Venus extends Planet {
 
         setTemperature(475, 0, 462);
     }
+
     @Override
     public Sphere getSphere() {
         return sphere;
     }
+
     @Override
     public void initializePlanet(Sphere sphere) {
 

@@ -8,7 +8,7 @@ import me.ib.PersonalProject.util.Utility;
 public class Mars extends Planet {
 
     public Mars(Sphere sphere) {
-        super(new Moon[2], null, Utility.convertToNum(227.9 , "million"),
+        super(new Moon[2], null, Utility.convertToNum(227.9, "million"),
                 6780, 687, 24.6 + " hours", 25, "6.4 x 10^23", sphere);
 
         setSunlightTravelTime(0, 13, 0);
@@ -26,6 +26,7 @@ public class Mars extends Planet {
     public Sphere getSphere() {
         return sphere;
     }
+
     @Override
     public void initializePlanet(Sphere sphere) {
     }

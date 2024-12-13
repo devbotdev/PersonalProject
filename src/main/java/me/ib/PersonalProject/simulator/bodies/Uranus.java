@@ -30,10 +30,12 @@ public class Uranus extends Planet {
         rings[11] = new Ring("Nu");
         rings[12] = new Ring("Mu");
     }
+
     @Override
     public Sphere getSphere() {
         return sphere;
     }
+
     @Override
     public void initializePlanet(Sphere sphere) {
 

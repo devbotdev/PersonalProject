@@ -20,11 +20,10 @@ public class StarryBackground {
     private final int NUM_SMALL_STARS = 700;
     private final int NUM_MEDIUM_STARS = 200;
     private final int NUM_BIG_STARS = 100;
+    private final Pane bgPane;
     private Circle[] smallStars, mediumStars, bigStars;
 
-    private final Pane bgPane;
-
-    public StarryBackground(Pane bgPane, int small, int med, int big, int speed) {
+    public StarryBackground(Pane bgPane, int speed) {
         this.bgPane = bgPane;
 
         RadialGradient gradient = new RadialGradient(
@@ -45,6 +44,7 @@ public class StarryBackground {
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
     }
+
     public StarryBackground(Pane bgPane) {
         this.bgPane = bgPane;
 

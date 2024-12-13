@@ -30,10 +30,12 @@ public class Saturn extends Planet {
         rings[6] = new Ring("E", 282000);
         rings[7] = new Ring("Phoebe", 282000);
     }
+
     @Override
     public Sphere getSphere() {
         return sphere;
     }
+
     @Override
     public void initializePlanet(Sphere sphere) {
 

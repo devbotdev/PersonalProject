@@ -13,10 +13,12 @@ public class Mercury extends Planet {
 
         setSunlightTravelTime(0, 3.2, 0);
     }
+
     @Override
     public Sphere getSphere() {
         return sphere;
     }
+
     @Override
     public void initializePlanet(Sphere sphere) {
 

@@ -17,10 +17,12 @@ public class Makemake extends Planet {
 
         dwarfPlanet();
     }
+
     @Override
     public Sphere getSphere() {
         return sphere;
     }
+
     @Override
     public void initializePlanet(Sphere sphere) {
 

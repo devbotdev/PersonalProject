@@ -7,18 +7,23 @@ import me.ib.PersonalProject.Main;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.URL;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Objects;
 
 public abstract class Utility {
-    public static State state;
     public static final String optionsIcon = "optionsIcon.png";
-    public final static String directory = "me.ib/";
+    public static State state;
+    public static Sound sound;
 
     //Should be png icon
     public static Image getResourceAsImage(String fileName) {
-        return new Image(Objects.requireNonNull(Main.class.getClassLoader().getResourceAsStream("me.ib/" + fileName)));
+        URL resourceUrl = Main.class.getClassLoader().getResource("me.ib/" + fileName);
+        if (resourceUrl == null) {
+            throw new RuntimeException("Resource not found: ");
+        }
+        return new Image(resourceUrl.toString());
     }
 
     public static String formatWithCommas(long number) {
@@ -54,9 +59,11 @@ public abstract class Utility {
     public static double getStageScale(Stage stage) {
         return ((stage.getWidth() / 1920) + (stage.getHeight() / 1080)) / 2;
     }
+
     public static double getStageXScale(Stage stage) {
         return stage.getWidth() / 1920;
     }
+
     public static double getStageYScale(Stage stage) {
         return stage.getHeight() / 1080;
     }
@@ -64,9 +71,9 @@ public abstract class Utility {
     public static long convertToNum(double i, String s) {
         if (Objects.equals(s, "b") || Objects.equals(s, "billion")) {
             return (long) (i * 1_000_000_000L);
-        } else if (Objects.equals(s, "m") ||  Objects.equals(s, "million")) {
+        } else if (Objects.equals(s, "m") || Objects.equals(s, "million")) {
             return (long) (i * 1_000_000L);
-        } else if (s.isEmpty()){
+        } else if (s.isEmpty()) {
             return 0;
         } else {
             throw new IllegalArgumentException();

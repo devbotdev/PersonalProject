@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Slider?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
-
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0"
-           prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="me.ib.PersonalProject.control.TitleOptionsController">
-   <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0"/>
-   <BorderPane prefHeight="200.0" prefWidth="200.0">
-      <center>
-         <HBox alignment="CENTER" BorderPane.alignment="CENTER">
-            <VBox alignment="CENTER" prefWidth="220.0">
-               <Label id="options-titles" stylesheets="@stylesheet.css" text="Music Volume"
-                      textAlignment="CENTER"/>
-               <Slider fx:id="slider" blockIncrement="3.0" max="0.0" min="-80.0" prefHeight="43.0"
-                       prefWidth="201.0" stylesheets="@stylesheet.css"/>
-            </VBox>
-         </HBox>
-      </center>
-   </BorderPane>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity"
+           prefHeight="540.0" prefWidth="960.0" stylesheets="@stylesheet.css"
+           xmlns="http://javafx.com/javafx/null" fx:controller="me.ib.PersonalProject.control.TitleOptionsController">
+    <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0"/>
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+        <center>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                <VBox alignment="CENTER" prefWidth="220.0">
+                    <Label id="options-titles" stylesheets="@stylesheet.css" text="Music Volume"
+                           textAlignment="CENTER"/>
+                    <Slider fx:id="slider" blockIncrement="3.0" max="0.0" min="-40.0" prefHeight="40.0"
+                            prefWidth="200.0"/>
+                    <Button id="inButton" fx:id="creditsButton" mnemonicParsing="false" prefHeight="30.0"
+                            prefWidth="200.0" text="Credits"/>
+                </VBox>
+            </HBox>
+        </center>
+    </BorderPane>
+    <TextArea fx:id="credits" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true"/>
+    <Button fx:id="exitCreditsButton" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" scaleX="0.4"
+            scaleY="0.4" text="X" textAlignment="CENTER" StackPane.alignment="TOP_RIGHT"/>
 </StackPane>

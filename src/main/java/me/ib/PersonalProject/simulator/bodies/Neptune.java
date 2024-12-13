@@ -28,10 +28,12 @@ public class Neptune extends Planet {
         rings[7] = new Ring("Egalité");
         rings[8] = new Ring("Fraternité");
     }
+
     @Override
     public Sphere getSphere() {
         return sphere;
     }
+
     @Override
     public void initializePlanet(Sphere sphere) {
 
