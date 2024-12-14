@@ -29,10 +29,7 @@ public final class TitleOptionsController {
         creditsButton.setOnAction(event -> setCreditsVisibility(true));
         exitCreditsButton.setOnAction(event -> setCreditsVisibility(false));
 
-        slider.valueProperty().addListener((obs, oldVal, newVal) -> {
-            System.err.println(newVal.floatValue());
-            Utility.sound.setVolume(newVal.floatValue());
-        });
+        slider.valueProperty().addListener((obs, oldVal, newVal) -> Utility.sound.setVolume(newVal.floatValue()));
     }
 
     private void setCreditsVisibility(boolean state) {
