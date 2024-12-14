@@ -9,7 +9,7 @@ import java.net.URL;
 public class Sound {
 
     private static float musicVolume;
-    private final URL[] soundUrlMusic = new URL[1];
+    private final URL[] soundUrlMusic = new URL[9];
     private Clip clipMusic;
     private AudioInputStream aisMusic;
     private FloatControl gainControlMusic;
@@ -17,7 +17,15 @@ public class Sound {
     public Sound() {
         musicVolume = 0;
 
-        soundUrlMusic[0] = Main.class.getClassLoader().getResource("me.ib/sound.wav");
+        soundUrlMusic[0] = Main.class.getClassLoader().getResource("me.ib/soundtrack/0.wav");
+        soundUrlMusic[1] = Main.class.getClassLoader().getResource("me.ib/soundtrack/1.wav");
+        soundUrlMusic[2] = Main.class.getClassLoader().getResource("me.ib/soundtrack/2.wav");
+        soundUrlMusic[3] = Main.class.getClassLoader().getResource("me.ib/soundtrack/3.wav");
+        soundUrlMusic[4] = Main.class.getClassLoader().getResource("me.ib/soundtrack/4.wav");
+        soundUrlMusic[5] = Main.class.getClassLoader().getResource("me.ib/soundtrack/5.wav");
+        soundUrlMusic[6] = Main.class.getClassLoader().getResource("me.ib/soundtrack/6.wav");
+        soundUrlMusic[7] = Main.class.getClassLoader().getResource("me.ib/soundtrack/7.wav");
+        soundUrlMusic[8] = Main.class.getClassLoader().getResource("me.ib/soundtrack/credits.wav");
     }
 
     public void setFile(int i, float volume) {

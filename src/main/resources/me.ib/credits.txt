@@ -1,0 +1,83 @@
+Credits Music made by me.
+Works Cited
+“A Map of Callisto.” Mmedia.is, 2024, bjj.mmedia.is/data/callisto/index.html. Accessed 22 Nov. 2024.
+“A Map of Ganymede.” Mmedia.is, 2024, bjj.mmedia.is/data/ganymede/. Accessed 22 Nov. 2024.
+Apple. “Getting Started | Apple Developer Documentation.” Apple Developer Documentation, Apple, 2024, developer.apple.com/design/human-interface-guidelines/getting-started. Accessed 26 Oct. 2024.
+Atlassian. “What Is Version Control.” Atlassian, 2019, www.atlassian.com/git/tutorials/what-is-version-control. Accessed 19 Oct. 2024.
+ayaan07. “Java AWT vs Java Swing vs Java FX.” GeeksforGeeks, 1 Feb. 2024, www.geeksforgeeks.org/java-awt-vs-java-swing-vs-java-fx/. Accessed 16 Oct. 2024.
+BreakingCopyright — Royalty Free Music. ““Filaments” by @ScottBuckley 🇦🇺 | Sad Ambiental Music (No Copyright) 😔.” YouTube, 30 Nov. 2019, www.youtube.com/watch?v=taAxpw03dgM&list=PLfP6i5T0-DkLzct1ajlYTIWu_Olz6QlVT&index=10. Accessed 14 Dec. 2024.
+---. “🍂 [Copyright Free Chill Background Music] - “Way Home” by @Tokyowalker4038 🇯🇵.” YouTube, 26 Sept. 2020, www.youtube.com/watch?v=Q7HjxOAU5Kc&list=PLfP6i5T0-DkLzct1ajlYTIWu_Olz6QlVT&index=2. Accessed 14 Dec. 2024.
+---. “💪 Orchestral Trailer Piano Music (No Copyright) “the Epic Hero” by @KeysofMoonMusic 🇺🇸.” YouTube, 12 Feb. 2019, www.youtube.com/watch?v=ETbsXdqgcTM&list=PLfP6i5T0-DkLzct1ajlYTIWu_Olz6QlVT&index=12. Accessed 14 Dec. 2024.
+Britannica. “Moons of Jupiter | Table, Names, Sizes, & List | Britannica.” Www.britannica.com, 27 Nov. 2023, www.britannica.com/topic/moons-of-Jupiter-2236909. Accessed 22 Nov. 2024.
+“Callisto Map: Detailed Information.” Mmedia.is, 2024, bjj.mmedia.is/data/callisto/details.html. Accessed 22 Nov. 2024.
+Coosner, Lewis. “AWT vs Swing vs JavaFX • 2024 • Incus Data Programming Courses.” AWT vs Swing vs JavaFX, 20 Sept. 2023, incusdata.com/blog/awt-vs-swing-vs-javafx. Accessed 16 Oct. 2024.
+Figueiredo, Rute, and Mariana Berga. “Python vs Java: Key Differences and Code Examples.” Imaginarycloud.com, Summer 2023, www.imaginarycloud.com/blog/python-vs-java. Accessed 16 Oct. 2024.
+“Ganymede Map: Detailed Information.” Mmedia.is, 2024, bjj.mmedia.is/data/ganymede/details.html. Accessed 22 Nov. 2024.
+“Google Fonts.” Google Fonts, fonts.google.com/specimen/Montserrat.
+Government of Canada. “Dwarf Planets.” Www.asc-Csa.gc.ca, Government of Canada, 12 Mar. 2020, www.asc-csa.gc.ca/eng/astronomy/solar-system/dwarf-planets.asp. Accessed 3 Oct. 2024.
+Group, BSG Web. “Phobos.” Nasa.gov, 19 Feb. 2009, nasa3d.arc.nasa.gov/detail/mar1kuu2. Accessed 22 Nov. 2024.
+Hastings-Trew, James. “JHT’s Planetary Pixel Emporium.” Planetpixelemporium.com, 2023, planetpixelemporium.com/index.php. Accessed 6 Nov. 2024.
+Huffman, Darrell. “Gravity Simulator | All.” Gravitysimulator.org, gravitysimulator.org/. Accessed 16 Oct. 2024.
+Jacek Jabłonka. “To Start Programming in Java, You’ll Need a Few Essential Tools and Resources: Java Development Kit (JDK): This Is the Most Crucial Requirement. JDK Includes the Java Runtime Environment (JRE), Which Allows You to Run Java Applications, and Various Development Tools like the Java Compiler (Javac), D.” Linkedin.com, 16 Feb. 2024, www.linkedin.com/pulse/what-needed-java-programming-essentials-quick-guide-jacek-jab%C5%82onka-oc3tf. Accessed 20 Oct. 2024.
+“JavaFX Scene Builder Information.” Oracle.com, Oracle, 2020, www.oracle.com/java/technologies/javase/javafxscenebuilder-info.html. Accessed 16 Oct. 2024.
+Juviler, Jamie. “What Is GitHub? (and What Is It Used For?).” Blog.hubspot.com, 31 Oct. 2022, blog.hubspot.com/website/what-is-github-used-for. Accessed 19 Oct. 2024.
+Kareliya, Akash. “Python vs Java: A Comprehensive Comparison.” Radixweb, 25 Dec. 2023, radixweb.com/blog/python-vs-java. Accessed 16 Oct. 2024.
+Marin, Alex . “Convert JAR Files to EXE for Easier Deployment to Windows Users.” Advancedinstaller.com, 2 May 2024, www.advancedinstaller.com/convert-jar-files-to-exe.html. Accessed 20 Oct. 2024.
+Marspedia. “Moons of Mars (Phobos and Deimos).” Marspedia, 2020, marspedia.org/Moons_of_Mars_(Phobos_and_Deimos). Accessed 22 Nov. 2024.
+Miner, Ellis D. “Triton | Facts & Composition.” Encyclopedia Britannica, 4 Oct. 2024, www.britannica.com/place/Triton-astronomy. Accessed 22 Nov. 2024.
+NASA. “Callisto - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/jupiter/moons/callisto/. Accessed 7 Oct. 2024.
+---. “Ceres: Facts - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/dwarf-planets/ceres/facts/. Accessed 14 Oct. 2024.
+---. “Color Maps of Enceladus - 2014.” NASA Jet Propulsion Laboratory (JPL), 4 Nov. 2014, www.jpl.nasa.gov/images/pia18435-color-maps-of-enceladus-2014/. Accessed 22 Nov. 2024.
+---. “Enceladus - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/saturn/moons/enceladus. Accessed 14 Oct. 2024.
+---. “Eris - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/dwarf-planets/eris/. Accessed 15 Oct. 2024.
+---. “Europa: Facts - NASA Science.” Science.nasa.gov, 2024, science.nasa.gov/jupiter/moons/europa/europa-facts/. Accessed 22 Nov. 2024.
+---. “Facts about Earth - NASA Science.” Science.nasa.gov, NASA, 2024, science.nasa.gov/earth/facts/. Accessed 7 Oct. 2024.
+---. “Ganymede - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/jupiter/moons/ganymede/. Accessed 7 Oct. 2024.
+---. “Haumea - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/dwarf-planets/haumea/. Accessed 15 Oct. 2024.
+---. “Io - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/jupiter/moons/io/. Accessed 7 Oct. 2024.
+---. “Jupiter Moons - NASA Science.” Science.nasa.gov, NASA, 2024, science.nasa.gov/jupiter/moons/. Accessed 7 Oct. 2024.
+---. “Jupiter: Facts - NASA Science.” Science.nasa.gov, NASA, 2024, science.nasa.gov/jupiter/jupiter-facts/.
+---. “Makemake - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/dwarf-planets/makemake/. Accessed 15 Oct. 2024.
+---. “Mars: Facts - NASA Science.” Science.nasa.gov, NASA, 2024, science.nasa.gov/mars/facts/. Accessed 7 Oct. 2024.
+---. “Mercury - NASA Science.” Science.nasa.gov, NASA, 5 Jan. 2024, science.nasa.gov/mercury/. Accessed 3 Oct. 2024.
+---. “Neptune: Facts - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/neptune/neptune-facts/. Accessed 14 Oct. 2024.
+---. “Phobos - NASA Science.” Science.nasa.gov, science.nasa.gov/mars/moons/phobos/. Accessed 22 Nov. 2024.
+---. “Pluto & Dwarf Planets - NASA Science.” Science.nasa.gov, NASA, science.nasa.gov/dwarf-planets/. Accessed 3 Oct. 2024.
+---. “Pluto: Facts - NASA Science.” Science.nasa.gov, NASA, 2023, science.nasa.gov/dwarf-planets/pluto/facts/. Accessed 15 Oct. 2024.
+---. Reference Guide | Solar System Sizes and Distances Reference Guide. NASA.
+---. “Saturn: Facts - NASA Science.” Science.nasa.gov, NASA, 2024, science.nasa.gov/saturn/facts/. Accessed 14 Oct. 2024.
+---. “Solar System Exploration - NASA Science.” Science.nasa.gov, NASA, 2024, science.nasa.gov/solar-system/. Accessed 3 Oct. 2024.
+---. “Sun: Facts - NASA Science.” Science.nasa.gov, NASA, 2023, science.nasa.gov/sun/facts/. Accessed 15 Oct. 2024.
+---. “Titan - NASA Science.” Science.nasa.gov, NASA, 2024, science.nasa.gov/saturn/moons/titan/. Accessed 14 Oct. 2024.
+---. “Uranus: Facts - NASA Science.” Science.nasa.gov, NASA, 2023, science.nasa.gov/uranus/facts/. Accessed 14 Oct. 2024.
+---. “Venus: Facts.” Science.nasa.gov, NASA, 2024, science.nasa.gov/venus/venus-facts/. Accessed 7 Oct. 2024.
+NASA/JPL/DLR. “Europa, Ganymede, and Callisto: Surface Comparison at High Spatial Resolution – NASA’s Europa Clipper.” NASA’s Europa Clipper, 2019, europa.nasa.gov/resources/143/europa-ganymede-and-callisto-surface-comparison-at-high-spatial-resolution/?category=videos. Accessed 22 Nov. 2024.
+NeptuneProG. “Triton Texture Map by NeptuneProGaming on DeviantArt.” Deviantart.com, DeviantArt, 5 Nov. 2017, www.deviantart.com/neptuneprogaming/art/Triton-Texture-Map-713512330. Accessed 22 Nov. 2024.
+Neutrin05 Music. “Neutrin05 - Timeless.” YouTube, 6 Dec. 2020, www.youtube.com/watch?v=qxPKcKiLBR4&list=RDQMhqGKb6ydgLU&index=12. Accessed 14 Dec. 2024.
+Nielsen, Jakob. “10 Heuristics for User Interface Design.” Nielsen Norman Group, 30 Jan. 2024, www.nngroup.com/articles/ten-usability-heuristics/. Accessed 26 Oct. 2024.
+Oracle. “Java Documentation.” Oracle Help Center, docs.oracle.com/en/java/. Accessed 5 Oct. 2024.
+---. “Java Platform SE 8.” Oracle.com, 2020, docs.oracle.com/javase/8/docs/api/.
+---. “On-Heap and Off-Heap Memory.” Oracle Help Center, Core Libraries, 2024, docs.oracle.com/en/java/javase/23/core/heap-and-heap-memory.html. Accessed 26 Oct. 2024.
+---. “Oracle Java SE Support Roadmap.” Oracle.com, Oracle, 2019, www.oracle.com/java/technologies/java-se-support-roadmap.html.
+---. “Overview (JavaFX 11).” Overview (JavaFX 11), Oracle, openjfx.io/javadoc/11/.
+“Part II: Building a JavaFX Application Using Scene Builder (Release 2).” Docs.oracle.com, Oracle, docs.oracle.com/javase/8/scene-builder-2/get-started-tutorial/jfxsb-get_started.htm. Accessed 16 Oct. 2024.
+Punch Deck. “Punch Deck - Ethereal.” YouTube, 28 Mar. 2020, www.youtube.com/watch?v=Tf7Eo3N47_w&list=RDQMhqGKb6ydgLU&index=7. Accessed 14 Dec. 2024.
+Rafal Kuć. “Understanding Memory Leaks in Java: Common Causes & How to Detect Them.” Sematext, 10 Mar. 2022, sematext.com/blog/java-memory-leaks/. Accessed 26 Oct. 2024.
+Redd, Nola Taylor . “How Hot Is Mercury?” Space.com, Space.com, 30 Nov. 2016, www.space.com/18645-mercury-temperature.html. Accessed 17 Oct. 2024.
+---. “How Hot Is Venus?” Space.com, Space, 17 Nov. 2012, www.space.com/18526-venus-temperature.html. Accessed 17 Oct. 2024.
+Royalty Free Music | Copyright Free | Tunetank. “Space Cinematic Ambient Free Music No Copyright.” YouTube, 31 Oct. 2022, www.youtube.com/watch?v=ozb32hgHdo4. Accessed 14 Dec. 2024.
+sarazond. “CodePen.” Codepen.io, codepen.io/. Accessed 31 Sept. 2024.
+Scherrer, Deborah, and Stanford Solar Center. Our Solar System - Ancient Worlds, New Discoveries. Stanford University, 2020, solar-center.stanford.edu/teachers/Our-Solar-System-Book.pdf. Accessed 19 Oct. 2024.
+Sharp, Tim, and Vicky Stein. “What Is Earth’s Average Temperature?” Space.com, Space, 25 Feb. 2022, www.space.com/17816-earth-temperature.html. Accessed 17 Oct. 2024.
+Sirius Beat. “Relaxing Calm | Free to Use Music | “the Cosmos” (Prod. Sirius Beat) Lucid Space Spiritual.” YouTube, 13 Sept. 2013, www.youtube.com/watch?v=Bkg08NvtvBU&list=RDQMhqGKb6ydgLU. Accessed 14 Dec. 2024.
+“Space Engine – the Universe Simulator.” SpaceEngine - the Universe Simulator, spaceengine.org/. Accessed 16 Oct. 2024.
+Staff, Space.com. “New Map of Jupiter’s Volcanic Moon Io Is Best One Ever.” Space.com, Space, 21 Mar. 2012, www.space.com/14977-jupiter-moon-io-global-map-photos.html. Accessed 22 Nov. 2024.
+Tatomir, Joanna. “Calculating Acceleration due to Gravity: Formula & Concept - Video & Lesson Transcript | Study.com.” Study.com, Study.com, 2019, study.com/academy/lesson/calculating-acceleration-due-to-gravity-formula-lesson-quiz.html. Accessed 20 Oct. 2024.
+“Texture: Space/Europa.jpg.” Paulbourke.net, 2024, paulbourke.net/texturelibrary/displayimage.cgi?space/europa.jpg. Accessed 22 Nov. 2024.
+“Titan: Liquid Methane Moon of Saturn | Images & Facts | Go Astronomy.” Www.go-Astronomy.com, www.go-astronomy.com/planets/saturn-moon-titan.htm.
+“Universe Sandbox.” Universesandbox.com, universesandbox.com/. Accessed 16 Oct. 2024.
+Wasay, Abdul. “Python vs Java: Key Differences Explained.” SkillReactor Blog, 31 Mar. 2024, www.skillreactor.io/blog/python-vs-java/. Accessed 16 Oct. 2024.
+What is Java compiler? - Definition from WhatIs.com. “What Is Java Compiler? - Definition from WhatIs.com.” TheServerSide.com, 2016, www.theserverside.com/definition/Java-compiler. Accessed 20 Oct. 2024.
+“What Is Java Heap Memory? - Sematext.” Sematext, 3 Jan. 2024, sematext.com/glossary/jvm-heap/. Accessed 26 Oct. 2024.
+Yadav, Yatika. “Difference B/W AWT and SWING and JavaFX.” Pianalytix - Machine Learning, 13 Nov. 2020, pianalytix.com/difference-b-w-awt-and-swing-and-javafx/. Accessed 16 Oct. 2024.
+
