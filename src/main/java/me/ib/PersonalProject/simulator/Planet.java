@@ -1,16 +1,5 @@
 package me.ib.PersonalProject.simulator;
 
-/*
-    public () {
-        super(null, null, Utility.convertToNum(, ""),
-                diameter, orbitTime, dayTime + " hours", axisOfRotationTilt, planetMass);
-
-        setSunlightTravelTime(0, 0, 0);
-
-        setTemperature(Max, Min, Avg);
-    }
- */
-
 import javafx.scene.shape.Sphere;
 import me.ib.PersonalProject.util.Utility;
 

@@ -8,11 +8,14 @@ import java.net.URL;
 
 public class Sound {
 
+    public static byte currentTrack = 0;
     private static float musicVolume;
     private final URL[] soundUrlMusic = new URL[9];
     private Clip clipMusic;
     private AudioInputStream aisMusic;
     private FloatControl gainControlMusic;
+    private long clipTimeMusic;
+    private boolean isPaused = false;
 
     public Sound() {
         musicVolume = 0;
@@ -33,16 +36,79 @@ public class Sound {
         try {
             aisMusic = AudioSystem.getAudioInputStream(soundUrlMusic[i]);
             clipMusic = AudioSystem.getClip();
-            clipMusic.open(aisMusic);
+            open();
             gainControlMusic = (FloatControl) clipMusic.getControl(FloatControl.Type.MASTER_GAIN);
             gainControlMusic.setValue(volume);
+
+            clipMusic.addLineListener(event -> {
+                if (event.getType() == LineEvent.Type.STOP) {
+                    clipMusic.close();
+                    if (!clipMusic.isOpen()) {
+                        open();
+                    }
+                    if (!isPaused) {
+                        playNextTrack();
+                    }
+                }
+            });
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
             throw new RuntimeException(e);
         }
     }
 
+    private void playNextTrack() {
+        if (currentTrack == soundUrlMusic.length - 1)
+            currentTrack = 0;
+        else
+            currentTrack += 1;
+
+        setFile(currentTrack, musicVolume);
+        play();
+    }
+
+
+    private void open() {
+        try {
+            clipMusic.open(aisMusic);
+        } catch (LineUnavailableException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public void play() {
-        if (clipMusic != null) clipMusic.start();
+        if (clipMusic != null) {
+            clipMusic.start();
+            isPaused = false;
+        }
+    }
+
+    public void pause() {
+        if (clipMusic != null) {
+            isPaused = true;
+            clipTimeMusic = clipMusic.getMicrosecondPosition();
+            clipMusic.stop();
+        }
+    }
+
+    public void resume() {
+        if (clipMusic != null) {
+            clipMusic.setMicrosecondPosition(clipTimeMusic);
+            clipMusic.start();
+            isPaused = false;
+        }
+    }
+
+    public void startCreditsMusic() {
+        pause();
+        setFile(8, musicVolume);
+        play();
+    }
+
+    public void stopCreditsMusic() {
+        clipMusic.stop();
+        setFile(currentTrack, musicVolume);
+        resume();
+        isPaused = false;
     }
 
     public void setVolume(float value) {

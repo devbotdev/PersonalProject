@@ -27,12 +27,19 @@ public final class TitleOptionsController {
         new StarryBackground(bgPane);
 
         creditsButton.setOnAction(event -> setCreditsVisibility(true));
-        exitCreditsButton.setOnAction(event -> setCreditsVisibility(false));
+        exitCreditsButton.setOnAction(event -> {
+            setCreditsVisibility(false);
+            Utility.sound.stopCreditsMusic();
+        });
+
+        credits.setText(Utility.extractCredits());
 
         slider.valueProperty().addListener((obs, oldVal, newVal) -> Utility.sound.setVolume(newVal.floatValue()));
     }
 
     private void setCreditsVisibility(boolean state) {
+        if (state) Utility.sound.startCreditsMusic();
+
         exitCreditsButton.setVisible(state);
         credits.setVisible(state);
     }

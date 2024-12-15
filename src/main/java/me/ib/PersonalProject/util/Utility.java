@@ -56,6 +56,22 @@ public abstract class Utility {
         }
     }
 
+    public static String extractCredits() {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(Objects.requireNonNull(Main.class.getClassLoader().getResourceAsStream("me.ib/credits.txt"))))) {
+            String line;
+            StringBuilder result = new StringBuilder();
+
+            while ((line = reader.readLine()) != null) {
+                line = line.trim();
+
+                result.append(line).append("\n");
+            }
+            return result.toString().trim();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public static double getStageScale(Stage stage) {
         return ((stage.getWidth() / 1920) + (stage.getHeight() / 1080)) / 2;
     }

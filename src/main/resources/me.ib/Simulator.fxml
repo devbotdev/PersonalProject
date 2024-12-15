@@ -1,101 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.Group?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.shape.Arc?>
-<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.ib.PersonalProject.simulator.Controller">
-    <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0" />
-    <Text id="hovered-planet-name" fx:id="hoveredPlanetName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Solar System" StackPane.alignment="TOP_CENTER" />
+<StackPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+           prefHeight="540.0" prefWidth="960.0" stylesheets="@stylesheet.css"
+           xmlns="http://javafx.com/javafx/23.0.1" fx:controller="me.ib.PersonalProject.simulator.Controller">
+    <Pane fx:id="bgPane" prefHeight="540.0" prefWidth="960.0"/>
+    <Text id="hovered-planet-name" fx:id="hoveredPlanetName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="Solar System" StackPane.alignment="TOP_CENTER"/>
     <BorderPane fx:id="overallView" prefHeight="700.0" prefWidth="1000.0">
         <center>
             <StackPane>
-                <Arc fx:id="mercuryOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="venusOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="earthOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="marsOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="ceresOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="jupiterOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="saturnOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="uranusOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="neptuneOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="plutoOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="haumeaOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="makemakeOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="erisOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Sphere fx:id="sunShine" radius="105.0" />
-                <Sphere fx:id="sun" radius="100" />
-                <Arc fx:id="mercuryOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="venusOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="earthOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="marsOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="ceresOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="jupiterOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="saturnOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="uranusOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="neptuneOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="plutoOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="haumeaOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="makemakeOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="erisOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                <Arc fx:id="mercuryOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="venusOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="earthOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="marsOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="ceresOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="jupiterOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="saturnOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="uranusOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="neptuneOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="plutoOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="haumeaOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="makemakeOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="erisOrbit" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Sphere fx:id="sunShine" radius="105.0"/>
+                <Sphere fx:id="sun" radius="100"/>
+                <Arc fx:id="mercuryOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="venusOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="earthOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="marsOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="ceresOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="jupiterOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="saturnOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="uranusOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="neptuneOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="plutoOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="haumeaOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="makemakeOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0"
+                     startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
+                <Arc fx:id="erisOrbit1" fill="white" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0"
+                     stroke="BLACK" strokeType="INSIDE" type="ROUND"/>
                 <Group fx:id="planetsGroup">
-                    <Sphere fx:id="glowSphere" layoutX="219.0" radius="50" translateZ="-1.0" />
-                    <Sphere fx:id="mercury" layoutX="145.0" radius="24.0" />
-                    <Sphere fx:id="venus" layoutX="311.0" radius="27.0" />
-                    <Sphere fx:id="earth" layoutX="89.0" radius="28.0" />
-                    <Sphere fx:id="mars" layoutX="379.0" radius="25.0" />
-                    <Sphere fx:id="ceres" layoutX="31.0" radius="22.0" />
-                    <Sphere fx:id="jupiter" layoutX="450.0" radius="50.0" />
-                    <Sphere fx:id="saturn" layoutX="-34.0" radius="45.0" />
-                    <Sphere fx:id="uranus" layoutX="523.0" radius="35.0" />
-                    <Sphere fx:id="neptune" layoutX="-101.0" radius="34.0" />
-                    <Sphere fx:id="pluto" layoutX="601.0" radius="23.0" />
-                    <Sphere fx:id="haumea" layoutX="-166.0" radius="22.5" />
-                    <Sphere fx:id="makemake" layoutX="673.0" radius="22.5" />
-                    <Sphere fx:id="eris" layoutX="-235.0" radius="23.0" />
+                    <Sphere fx:id="glowSphere" layoutX="219.0" radius="50" translateZ="-1.0"/>
+                    <Sphere fx:id="mercury" layoutX="145.0" radius="24.0"/>
+                    <Sphere fx:id="venus" layoutX="311.0" radius="27.0"/>
+                    <Sphere fx:id="earth" layoutX="89.0" radius="28.0"/>
+                    <Sphere fx:id="mars" layoutX="379.0" radius="25.0"/>
+                    <Sphere fx:id="ceres" layoutX="31.0" radius="22.0"/>
+                    <Sphere fx:id="jupiter" layoutX="450.0" radius="50.0"/>
+                    <Sphere fx:id="saturn" layoutX="-34.0" radius="45.0"/>
+                    <Sphere fx:id="uranus" layoutX="523.0" radius="35.0"/>
+                    <Sphere fx:id="neptune" layoutX="-101.0" radius="34.0"/>
+                    <Sphere fx:id="pluto" layoutX="601.0" radius="23.0"/>
+                    <Sphere fx:id="haumea" layoutX="-166.0" radius="22.5"/>
+                    <Sphere fx:id="makemake" layoutX="673.0" radius="22.5"/>
+                    <Sphere fx:id="eris" layoutX="-235.0" radius="23.0"/>
                 </Group>
-                <CheckBox id="checkbox" fx:id="orbitCheckBox" mnemonicParsing="false" selected="true" text="Planet Orbit" textFill="WHITE" translateX="-20.0" translateY="30.0" StackPane.alignment="TOP_RIGHT" />
+                <CheckBox id="checkbox" fx:id="orbitCheckBox" mnemonicParsing="false" selected="true"
+                          text="Planet Orbit" textFill="WHITE" translateX="-20.0" translateY="30.0"
+                          StackPane.alignment="TOP_RIGHT"/>
             </StackPane>
         </center>
     </BorderPane>
     <BorderPane fx:id="focusedView" prefHeight="200.0" prefWidth="200.0">
         <center>
             <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                <Button id="inButton" fx:id="backButtonFocused" mnemonicParsing="false" prefHeight="70.0" prefWidth="90.0" scaleX="0.5" scaleY="0.5" text="&lt;" StackPane.alignment="TOP_LEFT" />
-                <Sphere fx:id="focusedPlanet" radius="150.0" />
-                <Sphere fx:id="moon" radius="50" translateX="300.0" />
-                <Sphere fx:id="moon1" radius="50" translateX="-300.0" />
-                <Sphere fx:id="moon2" radius="50" translateX="600.0" />
-                <Sphere fx:id="moon3" radius="50" translateX="-600.0" />
-                <Button id="inButton" fx:id="informationButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" scaleX="0.5" scaleY="0.5" text="Information" StackPane.alignment="BOTTOM_CENTER">
+                <Button id="inButton" fx:id="backButtonFocused" mnemonicParsing="false" prefHeight="70.0"
+                        prefWidth="90.0" scaleX="0.5" scaleY="0.5" text="&lt;" StackPane.alignment="TOP_LEFT"/>
+                <Sphere fx:id="focusedPlanet" radius="150.0"/>
+                <Sphere fx:id="moon" radius="50" translateX="300.0"/>
+                <Sphere fx:id="moon1" radius="50" translateX="-300.0"/>
+                <Sphere fx:id="moon2" radius="50" translateX="600.0"/>
+                <Sphere fx:id="moon3" radius="50" translateX="-600.0"/>
+                <Button id="inButton" fx:id="informationButton" mnemonicParsing="false" prefHeight="50.0"
+                        prefWidth="300.0" scaleX="0.5" scaleY="0.5" text="Information"
+                        StackPane.alignment="BOTTOM_CENTER">
                     <StackPane.margin>
-                        <Insets />
+                        <Insets/>
                     </StackPane.margin>
                 </Button>
                 <TextArea fx:id="informationPanel" editable="false" scaleX="0.5" scaleY="0.5" wrapText="true">
                     <font>
-                        <Font name="Arial" size="40.0" />
+                        <Font name="Arial" size="40.0"/>
                     </font>
                 </TextArea>
-                <Text id="stats" fx:id="stats" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_LEFT">
+                <Text id="stats" fx:id="stats" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                      StackPane.alignment="BOTTOM_LEFT">
                     <StackPane.margin>
-                        <Insets bottom="15.0" left="15.0" />
+                        <Insets bottom="15.0" left="15.0"/>
                     </StackPane.margin>
                     <font>
-                        <Font name="Comic Sans MS Bold" size="22.0" />
+                        <Font name="Comic Sans MS Bold" size="22.0"/>
                     </font>
                 </Text>
             </StackPane>
         </center>
     </BorderPane>
-    <Button id="inButton" fx:id="fullscreenButton" mnemonicParsing="false" prefHeight="84.0" prefWidth="256.0" scaleX="0.5" scaleY="0.5" text="Fullscreen" translateX="30.0" translateY="5.0" StackPane.alignment="BOTTOM_RIGHT" />
+    <Button id="inButton" fx:id="fullscreenButton" mnemonicParsing="false" prefHeight="84.0" prefWidth="256.0"
+            scaleX="0.5" scaleY="0.5" text="Fullscreen" translateX="30.0" translateY="5.0"
+            StackPane.alignment="BOTTOM_RIGHT"/>
 </StackPane>

@@ -251,6 +251,7 @@ public class Controller {
     }
 
     private void moonClicked(Sphere sphere) {
+        informationButton.setVisible(!Objects.equals(focusedPlanetId.toLowerCase(), makemake.getId().toLowerCase()));
         focusedOnMoon(true);
         Planet pl = getPlanetFromName(focusedPlanetId);
         assert pl != null;
@@ -319,6 +320,7 @@ public class Controller {
     }
 
     private void planetClicked(Planet planet) {
+        informationButton.setVisible(true);
         focusedPlanetId = planet.getSphere().getId().substring(0, 1).toUpperCase() + planet.getSphere().getId().substring(1);
 
         StringBuilder s = new StringBuilder("Moons: " + getMoonsAmount() + "\n");
