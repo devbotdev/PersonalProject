@@ -1,43 +1,43 @@
 Id: Sun
 A 4.5 billion-year-old yellow dwarf star composed of primarily hydrogen and helium.
 
-It has a diameter of 1,391,000 kilometres, it’s the reason as to why the solar system exists. It provides the energy and the gravitational forces needed to keep the solar system intact.
+It has a diameter of 1,391,000 kilometres, which is the reason why the solar system exists. It provides the energy and the gravitational forces needed to keep the solar system intact.
 
-Although it’s diameter is hundred times larger than the Earth’s, the Sun is only average size compared to other stars in the universe. Many solar systems actually have more than one star.
+Although its diameter is a hundred times larger than the Earth's, the Sun is only average size compared to other stars in the universe. Many solar systems have more than one star.
 
-Mass 2 × 10^30 kilograms
+Mass 2 x 10^30 kilograms.
 
-The sun's surface burns at 5,500°C, the inside core burns at a whopping 15 million °C.
+The sun's surface burns at 5,500C, the inside core burns at a whopping 15 million C.
 
-One of the weirdest mysteries about the sun is its atmosphere. The outermost layer, the corona, can reach temperatures 2 million °C.
+One of the weirdest mysteries about the sun is its atmosphere. The outermost layer, the corona, can reach temperatures of 2 million C.
 
 The sun resides in the Milky Way, specifically the Orion Spur, which is an extension of the Sagittarius arm.
 
 The solar system is moving at a constant speed of 720,000 kilometres per hour, yet, even with that speed, it takes the Sun around 230 million years to orbit once around the Milky Way.
 
-The sun also rotates around itself, at a tilt of 7.25 degrees with respect to the plane of the planets’ orbits.
+The sun also rotates around itself, at a tilt of 7.25 degrees with respect to the plane of the planets orbits.
 
 At the equator, the sun completes a full rotation around itself every 25 Earth days, whereas the poles complete a rotation around themselves every 36 Earth days.
 
-4.6 billion years ago, when the sun was created, it had a large ring of dust around it. The dust has split into rings around the solar system, being kept in orbit by the planet’s gravities.
+4.6 billion years ago, when the sun was created, it had a large ring of dust around it. The dust has split into rings around the solar system, being kept in orbit by the planet's gravities.
 
 As the sun runs out of energy, it will expand into a large red dwarf, swallowing Mars, Venus, and possibly Earth as well. Scientists predict that the sun is just below halfway through its life, predicting another 5 billion years before it turns into a white dwarf.
 
-The sun's core is dense, at around 150 grams per cubic centimetre (g/cm³), it is 8 times denser than gold.
+The sun's core is dense, at around 150 grams per cubic centimetre (g/cm), it is 8 times denser than gold.
 
 The radiation of heat takes 170,000 years to escape the core of the sun, into space.
 
-The sun’s atmosphere is made up of: (85% Hydrogen 23% Helium 2% Others) the photosphere (the chromosphere), the transition zone, and the corona. This is where we see the solar flares.
+The sun's atmosphere is made up of: (85% Hydrogen 23% Helium 2% Others) the photosphere (the chromosphere), the transition zone, and the corona. This is where we see the solar flares.
 
-Star type: G2 V, yellow dwarf main-sequence star
+Star type: G2 V, yellow dwarf main-sequence star.
 
-(NASA, “Sun: Facts - NASA Science”)
+(NASA, Sun: Facts - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Mercury
-The smallest planet in the solar system, also the closest to the sun. The sun would appear three times bigger than on earth if you were to look at it from the surface of Mercury, with the amount of sunlight being 7 times greater.
+The smallest planet in the solar system is also the closest to the sun. The sun would appear three times bigger than on Earth if you were to look at it from the surface of Mercury, with the amount of sunlight being 7 times greater.
 
-During the day, Mercury reaches temperatures of up to 430°C, because of its lack of atmosphere, at night the temperature can drop to lows like -180°C. On average, Mercury has a temperature of 167 C.
+During the day, Mercury reaches temperatures of up to 430C, because of its lack of atmosphere, at night the temperature can drop to lows like -180C. On average, Mercury has a temperature of 167 C.
 
 Named after the Greek god Mercury.
 
@@ -47,89 +47,89 @@ Average distance of 57,910,000 kilometres (0.4 astronomical unit) from the sun. 
 
 Heavily eccentric, an egg-shaped planet orbits around the sun from 47 million kilometres away from the sun to 70 million kilometres away from the sun. A year in Mercury is 88 days.
 
-Despite its fast years, Mercury spins around on its axis once every 59 Earth days. Because of Mercury’s odd relationship between its orbital period and its rotation around its axis, unlike most planets, one full rotation around its axis does not equal a full day-night cycle. A full day-night cycle in Mercury is equal to 176 Earth days.
+Despite its fast years, Mercury spins around on its axis once every 59 Earth days. Because of Mercury's odd relationship between its orbital period and its rotation around its axis, unlike most planets, one full rotation around its axis does not equal a full day-night cycle. A full day-night cycle in Mercury is equal to 176 Earth days.
 
-Mercury does not experience seasons because of its axial tilt being only 0.04 degrees
+Mercury does not experience seasons because its axial tilt is only 0.04 degrees.
 
 Mercury has no moons and no rings. Formed around 4.5 billion years ago.
 
-It’s mass is around 3.30 x 10^23 kg
+Its mass is around 3.30 x 10^23 kg.
 
-(NASA, “Mercury - NASA Science”)
-(Redd, “How Hot Is Mercury?”)
+(NASA, Mercury - NASA Science)
+(Redd, How Hot Is Mercury?)
 (Scherrer and Stanford Solar Center)
 
 Id: Venus
-Being the second planet from the sun, Venus is the third brightest object in our sky, just behind the sun and the moon. Venus spins slowly around itself, the opposite direction of most other planets. It is often referred to as Earth’s evil twin because it's around the same size, but its dense atmosphere creates a greenhouse effect, making it the hottest planet in the solar system.
+Being the second planet from the sun, Venus is the third brightest object in our sky, just behind the sun and the moon. Venus spins slowly around itself, in the opposite direction of most other planets. It is often referred to as Earth's evil twin because it's around the same size, but its dense atmosphere creates a greenhouse effect, making it the hottest planet in the solar system.
 
 Venus is named after the Roman goddess of love and beauty.
 
-“Extremophile” microbes could survive in such conditions.
+Extremophile microbes could survive in such conditions.
 
 Winds can reach speeds of up to 360 kph.
 
-50km up from Venus’s surface temperatures range from 30°C - 70°C.
+50km up from Venus surface temperatures range from 30C - 70C.
 
 The average temperature on Venus is 462 degrees Celsius.
 
-The temperature on Venus’s surface can reach up to 475 Celsius.
+The temperature on Venus's surface can reach up to 475 Celsius.
 
 Venus orbits the sun at an average distance of 108,200,000 kilometres, 0.72 astronomical units. Sunlight travels from the sun to Venus in around six minutes.
 
-Venus’s diameter is 12,104 kilometres, only 652 km smaller than Earths.
+Venus's diameter is 12,104 kilometres, only 652 km smaller than Earth's.
 
 The distance between Earth and Venus can get as close as 38 million kilometres, and as far away as 261 million kilometres.
 
-Every 584 days, Venus completes a full phase cycle, full, half, quarter, etc. just like our moon
+Every 584 days, Venus completes a full phase cycle, full, half, quarter, etc. just like our moon.
 
-A day in Venus lasts 243 Earth days, and a year in Venus would last 225 Earth days, no seasons as a result of a mere 3° tilt on its axis.
+A day in Venus lasts 243 Earth days, and a year in Venus would last 225 Earth days, with no seasons as a result of a mere 3 tilt on its axis.
 
-Venus has a mass of 4.868×10^24 kg
+Venus has a mass of 4.868 x 10^24 kg.
 
-No Moons and No Rings
+It has No Moons and No Rings.
 
-(NASA, “Venus: Facts”)
-(Redd, “How Hot Is Venus?”)
+(NASA, Venus: Facts)
+(Redd, How Hot Is Venus?)
 (Scherrer and Stanford Solar Center)
 
 Id: Earth
 Fifth largest and third planet from the sun.
 
-Earth is the only planet with liquid H2O on its surface, its name comes from Old English and Germanic, meaning “the ground.”
+Earth is the only planet with liquid H2O on its surface, its name comes from Old English and Germanic, meaning the ground.
 
 A very hospital environment because of temperature and present elements making life abundant, starting 3.8 billion years ago.
 
-12,742 kilometres diameter, average distance from the sun of 149,600,000 kilometres, exactly 1 astronomical unit. It takes light about 8 minutes to travel from the sun to planet Earth.
+12,742 kilometres in diameter, the average distance from the sun of 149,600,000 kilometres, exactly 1 astronomical unit. It takes light about 8 minutes to travel from the sun to planet Earth.
 
 Earth completes a full rotation around itself once every 23.9 hours and a full rotation around the sun once every 365.25 days, this is why every fourth year is a leap year.
 
-Earth’s axis of rotation is tilted 23.4° with respect to the plane of Earth’s orbit around the Sun. This tilt causes Earth’s seasons, with it not being too high or too low, we get to enjoy warm summers and chilly winters.
+Earth's axis of rotation is tilted 23.4 with respect to the plane of Earth's orbit around the Sun. This tilt causes Earth's seasons, with it not being too high or too low, we get to enjoy warm summers and chilly winters.
 
-Earth has one moon, the moon. It’s the second brightest object in our sky during daytime and the brightest during nighttime. The moon has a diameter of 1,738 kilometres, making it the fifth largest moon in our solar system. On average, the moon orbits 384,400 kilometres away from Earth.
+Earth has one moon, the moon. It's the second brightest object in our sky during daytime and the brightest during nighttime. The moon has a diameter of 1,738 kilometres, making it the fifth largest moon in our solar system. On average, the moon orbits 384,400 kilometres away from Earth.
 
-The average temperature on Earth is 15 degrees Celsius, and the extremes are -89C° to 70C°.
+The average temperature on Earth is 15 degrees Celsius, and the extremes are -89C to 70C.
 
-Earth formed around 4.5 billion years ago. The inner core is made of iron and nickel metals, 1,221 kilometres in radius. The temperature reaches as high as 5400°C. Earth’s mass is 6 × 10^24 kg.
+Earth formed around 4.5 billion years ago. The inner core is made of iron and nickel metals, 1,221 kilometres in radius. The temperature reaches as high as 5400C. Earth's mass is 6 10^24 kg.
 
-The Earth's surface is nearly 70% covered in water with an average depth of 4 kilometres. Earth’s atmosphere is made up of  78% nitrogen, 21% oxygen, and 1% other gases such as argon, carbon dioxide, and neon.
+The Earth's surface is nearly 70% covered in water with an average depth of 4 kilometres. Earth's atmosphere is made up of 78% nitrogen, 21% oxygen, and 1% other gases such as argon, carbon dioxide, and neon.
 
-(NASA, “Facts about Earth - NASA Science”)
+(NASA, Facts about Earth - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Mars
-Mars is the most attractive planet when it comes to exploring. We have sent multiple rovers to research Mars. According to NASA, “Missions have found lots of evidence that Mars was much wetter and warmer, with a thicker atmosphere, billions of years ago.”
+Mars is the most attractive planet when it comes to exploring. We have sent multiple rovers to research Mars. According to NASA, Missions have found lots of evidence that Mars was much wetter and warmer, with a thicker atmosphere, billions of years ago.
 
-Mars’s name comes from the Romans, they called it after their god of war because of its red colour.
+Mars's name comes from the Romans, they called it after their god of war because of its red colour.
 
-Mars is around half the size of the Earth, 6780 kilometres in diameter. 227,900,000  kilometres away from the sun on average (1.5 astronomical units). Sunlight takes 13 minutes to arrive on Mars.
+Mars is around half the size of the Earth, 6780 kilometres in diameter. 227,900,000 kilometres away from the sun on average (1.5 astronomical units). Sunlight takes 13 minutes to arrive on Mars.
 
-Days on Mars are called sols, 24.6 hours. Mars orbits the sun every 669.6 sols or 687 Earth days. Mars’s axis tilts at 25° with respect to the plane of its orbit around the Sun. Season length varies because of Mars’s unique egg shaped orbit.
+Days on Mars are called sols, 24.6 hours. Mars orbits the sun every 669.6 sols or 687 Earth days. Mars's axis tilts at 25 with respect to the plane of its orbit around the Sun. Season length varies because of Mars's unique egg-shaped orbit.
 
-Mars’ temperatures range from -143C° to 27C°. It’s mass is 6.4 x 10^23 km
+Mars temperatures range from -143C to 27C. Its mass is 6.4 x 10^23 kg.
 
-Two moons orbit mars, Phobos and Deimos. They have a non-perfect shape because they don’t have enough mass for gravity to make them perfectly spherical.
+Two moons orbit Mars, Phobos and Deimos. They have a non-perfect shape because they don't have enough mass for gravity to make them perfectly spherical.
 
-Phobos, the bigger of the two moons, is projected to crash into Mars, or break apart in around 50 million years.
+Phobos, the bigger of the two moons, is projected to crash into Mars or break apart in around 50 million years.
 
 Id: Deimos
 Only half as big as Phobos, orbiting twice as far away from Mars.
@@ -142,17 +142,17 @@ Id: Phobos
 Diameter: 22 km
 Distance from Mars: 9377 km
 
-Mars currently has no rings, however in 50 million years, a dust ring could be created after Phobos crashes into Mars.
+Mars currently has no rings, however, in 50 million years, a dust ring could be created after Phobos crashes into Mars.
 
 Formed around 4.5 billion years ago.
 
-Mars’s surface is made of the colours brown, gold and tan. This is a result of oxidation of the iron in Martian soil.
+Mars's surface is made of the colours brown, gold and tan. This is a result of oxidation of the iron in Martian soil.
 
 Valles Marineris is a large canyon which stretches 4800 kilometres, long enough to stretch from New York to California.
 
 It is around 320 kilometres at its widest point, and 7 kilometres at its deepest point, making it around 10 times the size of our Grand Canyon.
 
-(NASA, “Mars: Facts - NASA Science”)
+(NASA, Mars: Facts - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Jupiter
@@ -164,44 +164,44 @@ Although it has a diameter of 139,822 kilometres, 11 times wider than the Earth,
 
 Jupiter completes a full orbit around the sun every 4,333 Earth days, or, around 12 Earth years.
 
-The average temperature on Jupiter is -110°C.
+The average temperature on Jupiter is -110C.
 
-With an average distance of 778,500,000 kilometres away from the sun, Jupiter clocks in at 5.2 astronomical units away from the Sun. It takes around 43 minutes to arrive at Jupiter!
+With an average distance of 778,500,000 kilometres away from the Sun, Jupiter clocks in at 5.2 astronomical units away from the Sun. It takes around 43 minutes to arrive at Jupiter!
 
-It’s mass is 1.9 × 10^27 kg
+Its mass is 1.9 x 10^27 kg.
 
-Its axis is tilted only around 3° with respect to its orbital path around the Sun.
+Its axis is tilted only around 3 with respect to its orbital path around the Sun.
 
-In 1979 NASA's Voyager 1 discovered a big surprise, Jupiter’s rings. Its rings were composed of small, dark particles which are almost invisible unless the sun shines on them.
+In 1979 NASA's Voyager 1 discovered a big surprise, Jupiter's rings. Its rings were composed of small, dark particles which are almost invisible unless the sun shone on them.
 
-Jupiter has four large moons, and a lot of smaller moons. The International Astronomical Union recognises 95 moons which belong to Jupiter. The four main ones being, Io, Europa, Ganymede, and Callisto, observed by Galileo Galilei in 1610.
+Jupiter has four large moons and a lot of smaller moons. The International Astronomical Union recognises 95 moons which belong to Jupiter. The four main ones being, Io, Europa, Ganymede, and Callisto, observed by Galileo Galilei in 1610.
 
 The Galileo spacecraft shows data which suggests that Jupiter's rings may have been formed as a result of dust kicked up by asteroid collisions.
 
-Jupiter is made from the same elements as a star, however it did not get big enough to ignite into an actual star. It is made up of mostly hydrogen and helium, elements which exist in their liquid state due to the pressure and temperature conditions found in Jupiter's surface, giving Jupiter the largest ocean in the Solar System.
+Jupiter is made from the same elements as a star, however, it did not get big enough to ignite into an actual star. It is made up of mostly hydrogen and helium, elements which exist in their liquid state due to the pressure and temperature conditions found on Jupiter's surface, giving Jupiter the largest ocean in the Solar System.
 
-Physicists believe that at depths halfway to the planet’s centre the pressure is so great that electrons may be “squeezed” (NASA) off of their hydrogen atoms, making the element electrically conductive.
+Physicists believe that at depths halfway to the planet's centre the pressure is so great that electrons may be squeezed (NASA) off of their hydrogen atoms, making the element electrically conductive.
 
-Jupiter is a gas giant, meaning that it does not have a true surface since it’s mostly made up of gases and liquids. The pressures and temperatures inside Jupiter's atmosphere make it impossible for any spacecraft to fly in Jupiter’s atmosphere.
+Jupiter is a gas giant, meaning that it does not have a true surface since it is mostly made up of gases and liquids. The pressures and temperatures inside Jupiter's atmosphere make it impossible for any spacecraft to fly in Jupiter's atmosphere.
 
-The colours on Jupiter's surface are believed to be spots of sulphur and phosphorus-containing gases. Because of Jupiter’s fast rotation, insanely strong whirlwinds are created, reaching 539 kph, creating spots. Said spots can last many years because of a lack of a solid surface to slow them down.
+The colours on Jupiter's surface are believed to be spots of sulphur and phosphorus-containing gases. Because of Jupiter's fast rotation, insanely strong whirlwinds are created, reaching 539 kph, and creating spots. Said spots can last many years because of a lack of a solid surface to slow them down.
 
-The Great Red Spot is a spot on Jupiter's surface twice the size of Earth. It’s been present on its surface for more than 300 years.
+The Great Red Spot is a spot on Jupiter's surface twice the size of Earth. It's been present on its surface for more than 300 years.
 
 Belts and Zones are the distinct lines on Jupiter's surface, created by the strong winds pushing Jupiter's clouds in different directions, creating the surface of the planet as we see it today.
 
-(NASA, “Jupiter: Facts - NASA Science”)
+(NASA, Jupiter: Facts - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Ganymede
-The largest moon in the solar system. It’s so large that it has its own magnetic field and atmosphere. Ganymede is even bigger than Mercury.
+The largest moon in the solar system. It's so large that it has a magnetic field and atmosphere. Ganymede is even bigger than Mercury.
 
-There is strong compelling evidence that beneath its icy surface exists a saltwater ocean, which may contain more water than all of Earth’s surface.
+There is strong compelling evidence that beneath its icy surface exists a saltwater ocean, which may contain more water than all of Earth's surface.
 
 Diameter: 5,262.4 km
 Average Distance from Jupiter: 1,070,400 km
 
-(NASA, “Ganymede - NASA Science”)
+(NASA, Ganymede - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Callisto
@@ -210,47 +210,47 @@ The most heavily cratered object in the solar system. Its surface consists of bl
 Diameter: 4,820.6 km
 Average Distance from Jupiter: 1,882,700 km
 
-(NASA, “Callisto - NASA Science”)
+(NASA, Callisto - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Io
 Volcanic activity is so plentiful that craters are filled with volcanic magma quicker than asteroids can create them. Its volcanoes are so powerful that they can be seen with a telescope all the way from Earth.
 
-Although it orbits around Jupiter, the two neighbouring moons’ gravity also act upon it every once in a while when they pass close by.
+Although it orbits around Jupiter, the two neighbouring moons' gravity also acts upon it every once in a while when they pass close by.
 
 Diameter: 3,643.2 km
 Average Distance from Jupiter: 421,800 km
 
-(NASA, “Io - NASA Science”)
+(NASA, Io - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Europa
-May well be one of the most promising places where we could find life. Scientists have good evidence that there is a saltwater ocean underneath its icy shell, holding up to twice as much water as Earth. On October 10, 2024, NASA is launching its “Europa Clipper” to determine the conditions below Europa's surface and whether or not it could support life.
+May well be one of the most promising places where we could find life. Scientists have good evidence that there is a saltwater ocean underneath its icy shell, holding up to twice as much water as Earth. On October 10, 2024, NASA is launching its Europa Clipper to determine the conditions below Europa's surface and whether or not it could support life.
 
 Diameter: 3,121.6 km
 Average Distance from Jupiter: 671,100 km
 
-(NASA, “Europa”)
+(NASA, Europa)
 (Scherrer and Stanford Solar Center)
 
 Id: Saturn
-The sixth planet from the sun, and the second largest. The gas giant made of hydrogen and helium is alike with Jupiter in many aspects. Although it's not the only planet with rings, no other planet in the solar system has rings as large and as complex as Saturns. Its rings extend up to 282,000 kilometres away from the planet. The main rings are around 10 metres in height. The Cassini Division gap extends 4,700 kilometres.
+The sixth planet from the sun, and the second largest. The gas giant made of hydrogen and helium is alike with Jupiter in many aspects. Although it's not the only planet with rings, no other planet in the solar system has rings as large and as complex as Saturn. Its rings extend up to 282,000 kilometres away from the planet. The main rings are around 10 metres in height. The Cassini Division gap extends 4,700 kilometres.
 
 The main rings A, B and C are the most noticeable, and the more recently discovered D, E, F, and G are fainter.
 
-The order of rings goes like this: D ring, C ring, B ring, Cassini Division, A ring, F ring, G ring, and finally, the E ring. Much farther out, in Phoebe (Saturn’s moon) orbit, exists the Phoebe ring.
+The order of rings goes like this: D ring, C ring, B ring, Cassini Division, A ring, F ring, G ring, and finally, the E ring. Much farther out, in Phoebe's (Saturn's moon) orbit, exists the Phoebe ring.
 
-It was created 4.5 billion years ago, and settled in orbit around 4 billion years ago.
+It was created 4.5 billion years ago and settled in orbit around 4 billion years ago.
 
-It’s the farthest planet in the solar system which has been observed by the naked human eye. Since it has been discovered during ancient times, it is named after the Roman god of agriculture and wealth; Jupiter’s father.
+It's the farthest planet in the solar system which has been observed by the naked human eye. Since it was discovered during ancient times, it is named after the Roman god of agriculture and wealth; Jupiter's father.
 
-The extreme temperature and planet composition of Saturn makes it highly unlikely for any life found in Saturn.
+The extreme temperature and planet composition of Saturn make it highly unlikely for any life found in Saturn.
 
-Saturn has a diameter of 120,500 kilometres, 9 times larger than the earth.
+Saturn has a diameter of 120,500 kilometres, 9 times larger than the Earth.
 
 1,433,000,000 kilometres on average away from the sun.
 
-The average temperature on Saturn is -178C°
+The average temperature on Saturn is -178C.
 
 Light travels from the sun to Saturn in around 80 minutes.
 
@@ -258,9 +258,9 @@ A day on Saturn lasts 10.7 hours. A year on Saturn lasts 10,756 Earth days.
 
 Saturn's axis is tilted by 26.73 degrees with respect to its orbit around the Sun, meaning that it experiences similar seasons to Earth.
 
-Saturn's core is made of iron and nickel, and is surrounded by rock and other materials made from heat and pressure. Liquid metallic and liquid hydrogen wrap up the core, similar to Jupiter, just much smaller.
+Saturn's core is made of iron and nickel and is surrounded by rock and other materials made from heat and pressure. Liquid metallic and liquid hydrogen wrap up the core, similar to Jupiter, just much smaller.
 
-It’s mass is 5.7 x 10^26 kg
+Its mass is 5.7 x 10^26 kg.
 
 Just like Jupiter, space shuttles would not be able to land on Saturn because of no concrete surface and intense conditions.
 
@@ -270,19 +270,19 @@ As of June 8, 2023, 146 moons have been found to orbit Saturn.
 
 The two main moons of Saturn are Titan and Enceladus.
 
-(NASA, “Saturn: Facts - NASA Science”)
+(NASA, Saturn: Facts - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Titan
-Saturn, the largest moon, has a dense atmosphere, mostly made of nitrogen, but a 50% higher pressure compared to Earth. It has clouds, rain, rivers, lakes and seas of liquid hydrocarbons like methane and ethane.
+Titan, the largest moon, has a dense atmosphere, mostly made of nitrogen, but a 50% higher pressure compared to Earth. It has clouds, rain, rivers, lakes and seas of liquid hydrocarbons like methane and ethane.
 
 Beneath its icy surface exists a large ocean made of water rather than methane. There could exist other forms of life in those oceans.
 
-Titans surface has temperatures of around -179 Celsius, but it is still one of the most hospitable places in the solar system.
+Titan's surface has temperatures of around -179 Celsius, but it is still one of the most hospitable places in the solar system.
 
-Titan has a diameter of 5150km and orbits saturn at a distance of 1,221,850km
+Titan has a diameter of 5150km and orbits Saturn at a distance of 1,221,850 km.
 
-(NASA, “Titan - NASA Science”)
+(NASA, Titan - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Enceladus
@@ -290,19 +290,19 @@ Another icy moon, yet much more interesting. Enceladus sprays water from its dee
 
 The examined samples show that the moon has most elements needed to support life, and also most likely has vents releasing hot, mineral-rich water into its oceans.
 
-The water it sprays creates its own ring as it orbits Saturn. Its small surface (500 kilometres) across and its extremely reflective surface (because of white ice), means that its surface temperatures reach as low as -201 Celsius
+The water it sprays creates its ring as it orbits Saturn. Its small surface (500 kilometres) across and its extremely reflective surface (because of white ice), means that its surface temperatures reach as low as -201 Celsius.
 
 Enceladus is named after a giant in Greek mythology.
 
-It is tidally locked to Saturn, taking 32.9 hours to orbit it. Water particles are pushed out of Enceladus’ surface at speeds reaching 400m/s, some of the particles reach Saturn's ring, but most of them fall back on the moon like snow.
+It is tidally locked to Saturn, taking 32.9 hours to orbit it. Water particles are pushed out of Enceladus's surface at speeds reaching 400m/s, some of the particles reach Saturn's ring, but most of them fall back on the moon like snow.
 
-Enceladus has a diameter of 504 km and orbits saturn at a distance of 238,000 km
+Enceladus has a diameter of 504 km and orbits Saturn at a distance of 238,000 km.
 
-(NASA, “Enceladus - NASA Science”)
+(NASA, Enceladus - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Uranus
-Uranus is the seventh planet from the Sun and the third largest. It’s a very cold and windy planet which has 13 faint rings and 28 small moons. It rotates at a 97.77 degree angle, making it look like it’s spinning on its side.
+Uranus is the seventh planet from the Sun and the third largest. It's a very cold and windy planet which has 13 faint rings and 28 small moons. It rotates at a 97.77-degree angle, making it look like it's spinning on its side.
 
 After the failed attempt from William Herschel to name the planet Georgium Sidus after King George III, it was decided to be named Uranus, the Greek god of the sky, as suggested by Johann Bode.
 
@@ -310,17 +310,17 @@ Its diameter is 51,118 kilometres, and on average, is 2,877,000,000 kilometres (
 
 A day in Uranus lasts around 17 hours, and a year in Uranus lasts 30,687 Earth days (84 Earth years).
 
-Its tilt is believed to be a result of a collision with an Earth sized planet, creating the most extreme seasons of any planet in the solar system. One side of the planet faces away from the sun for 21 years, creating extremely cold and dark winters.
+Its tilt is believed to be a result of a collision with an Earth-sized planet, creating the most extreme seasons of any planet in the solar system. One side of the planet faces away from the sun for 21 years, creating extremely cold and dark winters.
 
-It’s mass is 8.68 x 10^25 kg
+Its mass is 8.68 x 10^25 kg.
 
 Along with Venus, Uranus also rotates in the opposite direction compared to the other planets.
 
-Uranus has 28 moons which are uniquely named after the characters from William Shakespeare and Alexander Pope’s works.
+Uranus has 28 moons which are uniquely named after the characters from William Shakespeare and Alexander Pope's works.
 
-All of its inner moons seem to be half icy, half rocky, whereas the outer moons remain unknown, most likely asteroids.
+All of its inner moons seem to be half icy, and half rocky, whereas the outer moons remain unknown, most likely asteroids.
 
-Ordered closest to furthest, these are Uranus’ rings: Zeta, 6, 5, 4, Alpha, Beta, Eta, Gamma, Delta, Lambda, Epsilon, Nu, and Mu
+Ordered closest to furthest, these are Uranus rings: Zeta, 6, 5, 4, Alpha, Beta, Eta, Gamma, Delta, Lambda, Epsilon, Nu, and Mu.
 
 Uranus is a gas giant, at least 80% of it is made up of a dense mixture of water, methane, and ammonia. In its rocky core temperatures reach up to 4,982 degrees Celsius.
 
@@ -330,15 +330,15 @@ Temperatures in its atmosphere can reach lows of -224.2 degrees Celsius, even lo
 
 Winds can reach 900 kilometres per hour, spinning together with the planet at the poles, and against the planet's spin at the equator.
 
-(NASA, “Uranus: Facts - NASA Science”)
+(NASA, Uranus: Facts - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Neptune
 The furthest planet from our sun. Sunlight on Neptune is around 900 times weaker than here on planet Earth.
 
-Neptune’s mass is around 1.02 × 10^26 kg, it’s axial tilt is 28 degrees.
+Neptune's mass is around 1.02 x 10^26 kg, its axial tilt is 28 degrees.
 
-It’s the first planet found using mathematical calculations, and is named after the Roman god of the sea.
+It's the first planet found using mathematical calculations and is named after the Roman god of the sea.
 
 Neptune has a diameter of 49,528 kilometres and is 4,503,000,000 kilometres (30 astronomical units) away from the sun.
 
@@ -348,15 +348,15 @@ Neptune has 16 known moons, with its largest moon (2,706 km), Triton, being the 
 
 Triton spins in the opposite direction of Neptune's rotation, and its atmosphere is warming up, for reasons unknown to us.
 
-The planet has at least five main rings and four prominent ring arcs, closest to farthest they’re named: Galle, Leverrier, Lassell, Arago, and Adams; Courage, Liberté, Egalité, and Fraternité.
+The planet has at least five main rings and four prominent ring arcs, closest to farthest they're named: Galle, Leverrier, Lassell, Arago, and Adams; Courage, Libert, Egalit, and Fraternit.
 
 Neptune was formed as a result of gases from the solar system, around 4.5 billion years ago, scientists believe that it formed much closer to the sun and moved into its orbit around 4 billion years ago.
 
 Just like Uranus, Neptune is a gas giant, with at least 80% of it being made up of a dense mixture of water, methane, and ammonia. Neptune is the densest planet in our solar system.
 
-Neptune is the windiest planet in our solar system, with its winds reaching speeds of 2,000 kilometres per hour. Neptune is also extremely cold, with its temperatures averaging at around -210C°.
+Neptune is the windiest planet in our solar system, with its winds reaching speeds of 2,000 kilometres per hour. Neptune is also extremely cold, with its temperatures averaging at around -210C.
 
-(NASA, “Neptune: Facts - NASA Science”)
+(NASA, Neptune: Facts - NASA Science)
 (Scherrer and Stanford Solar Center)
 
 Id: Ceres
@@ -374,12 +374,12 @@ Its day is 9 hours long, and its year is 1,682 Earth days long.
 
 Ceres is described as an "embryonic planet," a planet which started to form but never fully developed, with Jupiter's strong gravitational field being the reason. It settled into orbit around 4 billion years ago.
 
-Ceres’ may be made up of around 25% water, which would be more water than earth has. Its atmosphere is very thin and contains traces of water vapour, which may be a result of sublimation or icy volcanoes.
+Ceres may be made up of around 25% water, which would be more water than Earth has. Its atmosphere is very thin and contains traces of water vapour, which may be a result of sublimation or icy volcanoes.
 
-(NASA, “Ceres: Facts - NASA Science”)
+(NASA, Ceres: Facts - NASA Science)
 
 Id: Pluto
-From 1930 to 2006, Pluto was classified as the solar system’s ninth planet. However, in 2006, scientists changed its classification to a dwarf planet since it was found to not have cleared its orbit.
+From 1930 to 2006, Pluto was classified as the solar system's ninth planet. However, in 2006, scientists changed its classification to a dwarf planet since it was found to not have cleared its orbit.
 
 Pluto is only 2,377 km wide, and 5.9 billion kilometres (39 AU) away from the sun. Its atmosphere is made up of nitrogen, methane, and carbon monoxide, and its temperature is -232 degrees Celsius, making it much too cold to support any life.
 
@@ -389,20 +389,20 @@ Pluto has 5 known moons, Charon, Nix, Hydra, Kerberos, and Styx, with its bigges
 
 Pluto was named by an 11-year-old girl who suggested the name to her grandfather over breakfast.
 
-Pluto’s orbit is both elliptical and tilted, it takes 248 years to complete its orbit and it can range from as close to 30 AU to the sun to 49.3 AU away.
+Pluto's orbit is both elliptical and tilted, it takes 248 years to complete its orbit and it can range from as close to 30 AU to the sun to 49.3 AU away.
 
 A day on Pluto takes 153 hours.
 
 Its axis of rotation is tilted 57 degrees with respect to the plane of its orbit around the Sun.
 
-Pluto’s atmosphere expands when it goes close to the sun and collapses as it moves further away. Water sublimates and the gases move into the atmosphere as it reaches close to the sun.
+Pluto's atmosphere expands when it goes close to the sun and collapses as it moves further away. Water sublimates and the gases move into the atmosphere as it reaches close to the sun.
 
-Because of the planets low gravity, the atmosphere extends really far away from the sun
+Because of the planet's low gravity, the atmosphere extends far away from the sun.
 
-(NASA, “Pluto: Facts - NASA Science”)
+(NASA, Pluto: Facts - NASA Science)
 
 Id: Haumea
-Haumea is one of the fastest spinning objects in the solar system. Its fast rotation shapes it into an oval, one that looks like an american football.
+Haumea is one of the fastest-spinning objects in the solar system. Its fast rotation shapes it into an oval, one that looks like an American football.
 
 Haumea is named after the Hawaiian goddess of fertility.
 
@@ -414,12 +414,12 @@ The first object in the Kuiper Belt to have rings.
 
 Astronomers believe that its surface is mostly made of rock with a coating of ice.
 
-(NASA, “Haumea - NASA Science”)
+(NASA, Haumea - NASA Science)
 
 Id: Makemake
 Makemake was named after the Rapanui god of fertility.
 
-Makemake has a 715 km radius, and is on average 9.8 billion kilometres (45.8 AU) away from the sun.
+Makemake has a 715 km radius and is on average 9.8 billion kilometres (45.8 AU) away from the sun.
 
 Sunlight takes around 6 hours and 20 minutes to reach the dwarf planet.
 
@@ -433,19 +433,19 @@ NASA provides limited information on its surface composition, traces of methane 
 
 It creates a thin atmosphere when it gets close to the sun, which ceases to exist as the dwarf planet moves farther away from it.
 
-(NASA, “Makemake - NASA Science”)
+(NASA, Makemake - NASA Science)
 
 Id: Eris
-Eris is named after the ancient Greek goddess of discord and strife. It’s named appropriately since Eris is the main reason as to why planets and dwarf planets are separated.
+Eris is named after the ancient Greek goddess of discord and strife. It's named appropriately since Eris is why planets and dwarf planets are separated.
 
 Diameter of 2,400 kilometres, on average 10 billion kilometres (68 AU) away from the sun. Light reaches Eris around 9 hours later after it exits the sun.
 
-A year in Eris lasts 557 Earth years, and a day lasts around 25.9 hours
+A year in Eris lasts 557 Earth years, and a day lasts around 25.9 hours.
 
-Eris has a single moon named Dysnomia, its name comes from Eris’s daughter, the demon goddess of lawlessness.
+Eris has a single moon named Dysnomia, its name comes from Eriss's daughter, the demon goddess of lawlessness.
 
-Temperatures on eris range from -217 degrees Celsius to -243 degrees Celsius.
+Temperatures on Earth range from -217 degrees Celsius to -243 degrees Celsius.
 
 It creates a thin atmosphere when it gets close to the sun, which ceases to exist as the dwarf planet moves farther away from it.
 
-(NASA, “Eris - NASA Science”)
+(NASA, Eris - NASA Science)

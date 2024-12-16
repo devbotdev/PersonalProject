@@ -32,6 +32,7 @@ public abstract class Utility {
     }
 
     public static String extractText(String id) {
+        if (Objects.equals(id, "Moon")) id = "Earth";
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(Objects.requireNonNull(Main.class.getClassLoader().getResourceAsStream("me.ib/info.txt"))))) {
             String line;
             boolean isTargetId = false;

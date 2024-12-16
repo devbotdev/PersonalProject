@@ -252,28 +252,29 @@ public class Controller {
 
     private void moonClicked(Sphere sphere) {
         informationButton.setVisible(!Objects.equals(focusedPlanetId.toLowerCase(), makemake.getId().toLowerCase()));
+        informationButton.setVisible(!Objects.equals(focusedPlanetId.toLowerCase(), neptune.getId().toLowerCase()));
+
         focusedOnMoon(true);
         Planet pl = getPlanetFromName(focusedPlanetId);
         assert pl != null;
 
-        byte i = 0;
-
         focusedPlanetBack = focusedPlanetId;
 
-        if (sphere == moon)
-            focusedPlanetId = pl.moons[i++].getName();
-        else if (sphere == moon1)
-            focusedPlanetId = pl.moons[i++].getName();
-        else if (sphere == moon2)
-            focusedPlanetId = pl.moons[i++].getName();
-        else if (sphere == moon3)
-            focusedPlanetId = pl.moons[i++].getName();
-
-        i--;
+        if (sphere == moon) {
+            focusedPlanetId = pl.moons[0].getName();
+            stats.setText(getMoonText(pl.moons[0]));
+        } else if (sphere == moon1) {
+            focusedPlanetId = pl.moons[1].getName();
+            stats.setText(getMoonText(pl.moons[1]));
+        } else if (sphere == moon2) {
+            focusedPlanetId = pl.moons[2].getName();
+            stats.setText(getMoonText(pl.moons[2]));
+        } else if (sphere == moon3) {
+            focusedPlanetId = pl.moons[3].getName();
+            stats.setText(getMoonText(pl.moons[3]));
+        }
 
         updateHoveredPlanetName(focusedPlanetId);
-
-        stats.setText(getMoonText(pl.moons[i]));
 
         focusedPlanet.setMaterial(sphere.getMaterial());
 
