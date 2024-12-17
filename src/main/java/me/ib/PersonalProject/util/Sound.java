@@ -119,4 +119,8 @@ public class Sound {
         }
         if (gainControlMusic != null) gainControlMusic.setValue(musicVolume);
     }
+
+    public float getVolume() {
+        return musicVolume;
+    }
 }
