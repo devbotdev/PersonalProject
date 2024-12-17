@@ -251,8 +251,8 @@ public class Controller {
     }
 
     private void moonClicked(Sphere sphere) {
-        informationButton.setVisible(!Objects.equals(focusedPlanetId.toLowerCase(), makemake.getId().toLowerCase()));
-        informationButton.setVisible(!Objects.equals(focusedPlanetId.toLowerCase(), neptune.getId().toLowerCase()));
+        informationButton.setVisible(!(Objects.equals(focusedPlanetId.toLowerCase(), neptune.getId().toLowerCase()) ||
+                Objects.equals(focusedPlanetId.toLowerCase(), makemake.getId().toLowerCase())));
 
         focusedOnMoon(true);
         Planet pl = getPlanetFromName(focusedPlanetId);
