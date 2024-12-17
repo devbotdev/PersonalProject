@@ -286,18 +286,17 @@ public class Controller {
 
     private String getMoonText(Moon moon) {
         String s = "";
+        if (moon == makemake0.moons[0]) s += "No Accurate Texture Map(s) Available (Limitation: Size & Distance From Earth)\nInformation Included In Makemake's Information Panel\n";
+        if (moon == neptune0.moons[0]) s += "Information Included In Neptune's Information Panel\n";
         if (moon.rings != null) s += "Rings: " + moon.rings.length + "\n";
-        if (moon.getMoonDiameter() != 0)
-            s += "Diameter: " + Utility.formatWithCommas(moon.getMoonDiameter()) + "km" + "\n";
-        if (moon.getDistanceFromPlanet() != 0)
-            s += "Distance From the Planet: " + Utility.formatWithCommas(moon.getDistanceFromPlanet()) + "km" + "\n";
+        if (moon.getMoonDiameter() != 0) s += "Diameter: " + Utility.formatWithCommas(moon.getMoonDiameter()) + "km" + "\n";
+        if (moon.getDistanceFromPlanet() != 0) s += "Distance From the Planet: " + Utility.formatWithCommas(moon.getDistanceFromPlanet()) + "km" + "\n";
         if (moon.orbitTime != 0) s += "Orbit Time: " + moon.orbitTime + " days" + "\n";
         if (moon.getDayTime() != null) s += "Day Time: " + moon.getDayTime() + "\n";
         if (moon.TEMPERATURE_AVG != 0) s += "Average Temperature: " + moon.TEMPERATURE_AVG + "°C" + "\n";
         if (moon.TEMPERATURE_MAX != 0) s += "Max Temperature: " + moon.TEMPERATURE_MAX + "°C" + "\n";
         if (moon.TEMPERATURE_MIN != 0) s += "Min Temperature: " + moon.TEMPERATURE_MIN + "°C" + "\n";
-        if (moon.timeCreated != 4500000000L)
-            s += "Time Created: " + Utility.formatWithCommas(moon.timeCreated) + " years ago" + "\n";
+        if (moon.timeCreated != 4500000000L) s += "Time Created: " + Utility.formatWithCommas(moon.timeCreated) + " years ago" + "\n";
 
         return s.substring(0, s.length() - 1);
     }
